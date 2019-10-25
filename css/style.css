@@ -37,7 +37,7 @@ a {
     color: #A7A7A7;
 }
 
-a:hover {
+.navbar-nav a:hover {
     color: #A8369B;
 }
 
@@ -331,10 +331,42 @@ a:hover {
 }
 
 /* ---------------------------------------------------
+   LEGENDA
+----------------------------------------------------- */
+
+.purple-circle {
+    color: #A8369B;
+}
+
+.blue-circle {
+    color: #3498DB;
+}
+
+.darkblue-circle {
+    color: #392C70;
+}
+
+/* ---------------------------------------------------
+   BUTTON
+----------------------------------------------------- */
+
+.btn-outline-custom {
+    border-color: #6c757d;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+
+/* ---------------------------------------------------
    SIDEBAR MEDIAQUERIES
 ----------------------------------------------------- */
 
 @media (min-width: 768px) {
+        .chart-area {
+    height: 15rem;
+}
   .sidebar {
     width: 14rem !important;
   }
@@ -456,8 +488,7 @@ a:hover {
     .widget-content-left {
         display: none;
     }
-    
-    .widget-description {
+    .overviewcard .widget-description {
         display: none;
     }
 }

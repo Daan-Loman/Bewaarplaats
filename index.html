@@ -59,15 +59,15 @@
       </div>
         
       <!-- Nav Item - Overzicht -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Overzicht</span></a>
       </li>
         
       <!-- Nav Item - Berichten -->
-      <li class="nav-item  active">
-        <a class="nav-link" href="#">
+      <li class="nav-item">
+        <a class="nav-link" href="berichten.html">
           <i class="fas fa-envelope"></i>
           <span>Berichten</span></a>
       </li>
@@ -99,31 +99,14 @@
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
+            <h6 class="collapse-header">Pages</h6>
+            <a class="collapse-item" href="login.html">Categorieën</a>
+            <a class="collapse-item" href="register.html">Menu's</a>
+            <a class="collapse-item" href="forgot-password.html">Emails</a>
           </div>
         </div>
       </li>
 
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-      </li>
-
-      <!-- Nav Item - Tables -->
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
-      </li>
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
@@ -193,165 +176,100 @@
                     
             <!-- Page Heading -->
             <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                <h1 class="page-title">Berichten</h1>
+                <h1 class="page-title">Overzicht</h1>
             </div>
                 
-                <div class="row">
-                    <div class="col-md-12 col-xs-12 col-lg-12 col-xl-4">
-                        <div class="overviewcard mb-3 widget-content shadow">
-                            <div class="widget-content-wrapper text-black align-items-center">
-                                <div class="widget-content-left">
-                                    <img src="images/envelope.png" width="27px" height="21px">
-                                </div>
-                                <div class="widget-content-center">
-                                    <div class="widget-heading">Aantal berichten</div>
-                                    <div class="widget-subheading">Afgelopen 7 dagen</div>
-                                </div>
-                                <div class="widget-content-right">
-                                    <div class="widget-numbers"><span>46</span>
-                                        <div class="widget-description text-danger"><i class="fa fa-arrow-down"></i><span>1,1</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-12 col-xs-12 col-lg-12 col-xl-4">
-                        <div class="overviewcard mb-3 widget-content shadow">
-                            <div class="widget-content-wrapper text-black align-items-center">
-                                <div class="widget-content-left">
-                                    <img src="images/thumb-up-gesture.png" width="28px" height="27px">
-                                </div>
-                                <div class="widget-content-center">
-                                    <div class="widget-heading">Aantal likes</div>
-                                    <div class="widget-subheading">Afgelopen 7 dagen</div>
-                                </div>
-                                <div class="widget-content-right">
-                                    <div class="widget-numbers"><span>4.423</span>
-                                        <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>7,1</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-12 col-xs-12 col-lg-12 col-xl-4">
-                        <div class="overviewcard mb-3 widget-content shadow">
-                            <div class="widget-content-wrapper text-black align-items-center">
-                                <div class="widget-content-left">
-                                    <img src="images/comment-dots.png" width="30px" height="26px">
-                                </div>
-                                <div class="widget-content-center">
-                                    <div class="widget-heading">Aantal reacties</div>
-                                    <div class="widget-subheading">Afgelopen 7 dagen</div>
-                                </div>
-                                <div class="widget-content-right">
-                                    <div class="widget-numbers"><span>1.322</span>
-                                        <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>5,1</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- End of row -->
-                        
-                <div class="row">
-                    <div class="col-md-12 col-xs-12 col-lg-12 col-xl-8">
-                        <!-- DataTales Example -->
-                          <div class="card shadow mb-4">
-                            <div class="card-header py-3">
-                              <h6 class="m-0 font-weight-bold">Alle berichten</h6>
-                            </div>
-                            <div class="card-body">
-                              <div class="table-responsive">
-                                <table class="table" id="dataTable" width="100%" cellspacing="0">
-                                  <thead>
-                                    <tr class="custom-table-text bg-purple">
-                                      <th>Avatar</th>
-                                      <th>Titel</th>
-                                      <th>Groepen</th>
-                                      <th>Bereik</th>
-                                      <th>Weergaven</th>
-                                      <th>Likes</th>
-                                      <th>Reacties</th>
-                                      <th>Shares</th>
-                                      <th>Analytics</th>
-                                    </tr>
-                                  </thead>
-
-                                  <tbody>
-                                    <tr class="custom-table-text">
-                                      <td><img src="images/Avatar.png"></td>
-                                      <td>Voorlopige eindstand Samsung incentives</td>
-                                      <td>Groep A</td>
-                                      <td>72%</td>
-                                      <td>1587</td>
-                                      <td>987</td>
-                                      <td>67</td>
-                                      <td>7</td>
-                                      <td>Bekijk</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td><img src="images/Avatar2.png"></td>
-                                      <td>Overheid kan 5G nog versnellen</td>
-                                      <td>Groep A</td>
-                                      <td>87%</td>
-                                      <td>987</td>
-                                      <td>312</td>
-                                      <td>32</td>
-                                      <td>5</td>
-                                      <td>Bekijk</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td><img src="images/Avatar.png"></td>
-                                      <td>Aankondiging | Tariefswijziging</td>
-                                      <td>Groep B</td>
-                                      <td>77%</td>
-                                      <td>1198</td>
-                                      <td>546</td>
-                                      <td>156</td>
-                                      <td>33</td>
-                                      <td>Bekijk</td>
-                                    </tr> 
-                                    <tr class="custom-table-text">
-                                      <td><img src="images/Avatar.png"></td>
-                                      <td>Start Retail Awards</td>
-                                      <td>Alle</td>
-                                      <td>93%</td>
-                                      <td>2645</td>
-                                      <td>1102</td>
-                                      <td>132</td>
-                                      <td>68</td>
-                                      <td>Bekijk</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td><img src="images/Avatar3.png"></td>
-                                      <td>Uitblinken in ondernemen</td>
-                                      <td>Groep B</td>
-                                      <td>77%</td>
-                                      <td>576</td>
-                                      <td>64</td>
-                                      <td>22</td>
-                                      <td>9</td>
-                                      <td>Bekijk</td>
-                                    </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                              </div>
-                            </div>
-                    </div>  
-                    
-                    <div class="col-md-12 col-xs-12 col-lg-12 col-xl-4">
-                        
-                        <!-- Area chart -->
                         <div class="row">
-                            <div class="col-md-12 col-xs-12 col-lg-12 col-xl-12">
-                                <div class="card shadow mb-4">
-                                    <div class="card-header py-3">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card shadow mb-4 border-0">
+                                    <div class="card-header bg-white border-0">
                                         <div class="float-left">
-                                        <h6 class="m-0 font-weight-bold">Recente activiteiten</h6>
+                                            <div class="widget-heading">Aantal logins</div>
                                         </div>
+                                        <div class="float-right">
+                                            <div class="widget-subheading">Afgelopen 7 dagen</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="float-left">
+                                            <div class="widget-numbers"><span>19.234</span>
+                                            <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>1,8%</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="float-right"><img src="images/Groei.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card shadow mb-4 border-0">
+                                    <div class="card-header bg-white border-0">
+                                        <div class="float-left">
+                                            <div class="widget-heading">Unieke logins</div>
+                                        </div>
+                                        <div class="float-right">
+                                            <div class="widget-subheading">Afgelopen 7 dagen</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="float-left">
+                                            <div class="widget-numbers"><span>1.643</span>
+                                            <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>0,1%</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="float-right"><img src="images/Groei.png"></div>
+                                    </div>
+                                </div>
+                                </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card shadow mb-4 border-0">
+                                    <div class="card-header bg-white border-0">
+                                        <div class="float-left">
+                                            <div class="widget-heading">Gem. logins</div>
+                                        </div>
+                                        <div class="float-right">
+                                            <div class="widget-subheading">Afgelopen 7 dagen</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="float-left">
+                                            <div class="widget-numbers"><span>11,7</span>
+                                            <div class="widget-description text-danger"><i class="fa fa-arrow-down"></i><span>0,8%</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="float-right"><img src="images/Daling.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card shadow mb-4 border-0">
+                                    <div class="card-header bg-white border-0">
+                                        <div class="float-left">
+                                            <div class="widget-heading">Sessieduur</div>
+                                        </div>
+                                        <div class="float-right">
+                                            <div class="widget-subheading">Afgelopen 7 dagen</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="float-left">
+                                            <div class="widget-numbers"><span>4m 2s</span>
+                                            <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>9,8%</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="float-right"><img src="images/Groei.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End of Row -->
+                        
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-12">
+                                <div class="card shadow mb-4 border-0">
+                                    <div class="card-header bg-white border-0">
+                                        <div class="float-left">
+                                            <div class="widget-heading">Aantal logins</div>
+                                        </div>
+                                        <div class="float-right">
                                             <div class="float-right">  
                                             <div class="dropdown no-arrow">
                                                 <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -359,68 +277,205 @@
                                                 </a>
                                             <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 18px, 0px);">
                                             <div class="dropdown-header">Selecteer activiteit</div>
-                                            <a class="dropdown-item" href="#">Likes</a>
-                                            <a class="dropdown-item" href="#">Reacties</a>
-                                            <a class="dropdown-item" href="#">Shares</a>
+                                            <a class="dropdown-item" href="#">Dag</a>
+                                            <a class="dropdown-item" href="#">Week</a>
+                                            <a class="dropdown-item" href="#">Maand</a>
                                             </div>
+                                            </div>
+                                            </div>  
                                         </div>
-                                        </div>  
                                     </div>
-                                <div class="card-body">
-                                    <h3>1.322 Reacties</h3>
-                                    <p>Geplaatst door 245 verschillende gebruikers</p>
-                            
+                                    <div class="card-body">
                                     <div class="chart-area">
                                         <canvas id="myAreaChart"></canvas>
                                     </div>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-12">
+                                <div class="card shadow mb-4 border-0">
+                                    <div class="card-header bg-white border-0">
+                                        <div class="float-left">
+                                            <div class="widget-heading">Top items</div>
+                                        </div>
+                                        <div class="float-right">
+                                            <div class="float-right">
+                                                <button type="button" class="btn btn-outline-custom">
+                                            <div class="dropdown no-arrow">
+                                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa-sm fa-fw text-gray-400"></i>Weergaven
+                                                </a>
+                                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 18px, 0px);">
+                                            <div class="dropdown-header">Selecteer activiteit</div>
+                                            <a class="dropdown-item" href="#">Weergaven</a>
+                                            <a class="dropdown-item" href="#">Likes</a>
+                                            <a class="dropdown-item" href="#">Reacties</a>
+                                            </div>
+                                            </div>
+                                                </button>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                    <table class="table" id="dataTable" width="100%" cellspacing="0">
+    
+
+                                  <tbody>
+                                    <tr class="custom-table-text">  
+                                      <td>Nieuwsfeed</td>   
+                                      <td class="float-right">13.213</td>   
+                                    </tr>
+                                    <tr class="custom-table-text">  
+                                      <td>Contactenlijst</td>   
+                                      <td class="float-right">12.898</td>   
+                                    </tr>
+                                    <tr class="custom-table-text">  
+                                      <td>Tips & tricks</td>   
+                                      <td class="float-right">11.943</td>   
+                                    </tr>
+                                    <tr class="custom-table-text">  
+                                      <td>Product trainingen</td>   
+                                      <td class="float-right">11.714</td>   
+                                    </tr>
+                                    <tr class="custom-table-text">  
+                                      <td>Wijzigingen</td>   
+                                      <td class="float-right">11.213</td>   
+                                    </tr>
+                                </tbody>
+                                </table>
+                                    </div>
                                 </div>
                             </div>
                         </div> <!-- End of row -->
                         
-                     <!-- Populaire berichten area -->
-                      <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                          <h6 class="m-0 font-weight-bold">Populaire berichten</h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table" id="dataTable" width="100%" cellspacing="0">
-    
-
-                                  <tbody>
-                                    <tr class="custom-table-text">
-                                      <td><img src="images/Avatar.png"></td>
-                                      <td>Start Retail Awards</td>
-                                      <td>2.645</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td><img src="images/Avatar3.png"></td>
-                                      <td>Vier stellingen over stralingen</td>
-                                      <td>2.612</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td><img src="images/Avatar.png"></td>
-                                      <td>Voorlopige eindstand Samsung incentives</td>
-                                      <td>1.587</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td><img src="images/Avatar3.png"></td>
-                                      <td>Wijziging CAO</td>
-                                      <td>1.498</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td><img src="images/Avatar.png"></td>
-                                      <td>Aankondiging | Tariefswijziging</td>
-                                      <td>1.198</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-12">
+                                <div class="card shadow mb-4 border-0">
+                                    <div class="card-header bg-white border-0">
+                                        <div class="float-left">
+                                            <div class="widget-heading">Activity score</div>
+                                        </div>
+                                        <div class="float-right">
+                                            <div class="widget-subheading">Afgelopen 7 dagen</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table" id="dataTable" width="100%" cellspacing="0">
+                                              <thead>
+                                                <tr class="custom-table-text">
+                                                  <th class="d-none d-sm-table-cell">#</th>
+                                                  <th>Avatar</th>
+                                                  <th>Naam</th>
+                                                  <th class="d-none d-sm-table-cell">Functie</th>
+                                                  <th class="d-none d-sm-table-cell">Groep</th>
+                                                  <th>Punten</th>
+                                                  <th class="d-none d-sm-table-cell">Details</th>
+                                                </tr>
+                                              </thead>
+                                                <tbody>
+                                                    <tr class="custom-table-text">
+                                                      <td class="d-none d-sm-table-cell">1</td>
+                                                      <td><img src="images/employee1.png"></td>
+                                                      <td>Sarah Jansen</td>
+                                                      <td class="d-none d-sm-table-cell">HR medewerker</td>
+                                                      <td class="d-none d-sm-table-cell">Groep A</td>
+                                                      <td>90 punten</td>
+                                                      <td class="d-none d-sm-table-cell">Bekijk</td>
+                                                    </tr>
+                                                      <tr class="custom-table-text">
+                                                      <td class="d-none d-sm-table-cell">2</td>
+                                                      <td><img src="images/employee2.png"></td>
+                                                      <td>Lukas Woudenberg</td>
+                                                      <td class="d-none d-sm-table-cell">Store manager</td>
+                                                      <td class="d-none d-sm-table-cell">Groep B, Groep D</td>
+                                                      <td>82 punten</td>
+                                                      <td class="d-none d-sm-table-cell">Bekijk</td>
+                                                    </tr>
+                                                    <tr class="custom-table-text">
+                                                      <td class="d-none d-sm-table-cell">3</td>
+                                                      <td><img src="images/employee3.png"></td>
+                                                      <td>Gijs Mulder</td>
+                                                      <td class="d-none d-sm-table-cell">Marketing manager</td>
+                                                      <td class="d-none d-sm-table-cell">Groep C, Groep D</td>
+                                                      <td>75 punten</td>
+                                                      <td class="d-none d-sm-table-cell">Bekijk</td>
+                                                    </tr>
+                                                    <tr class="custom-table-text">
+                                                      <td class="d-none d-sm-table-cell">4</td>
+                                                      <td><img src="images/employee4.png"></td>
+                                                      <td>Iris Huk</td>
+                                                      <td class="d-none d-sm-table-cell">HR manager</td>
+                                                      <td class="d-none d-sm-table-cell">Groep A, Groep D</td>
+                                                      <td>65 punten</td>
+                                                      <td class="d-none d-sm-table-cell">Bekijk</td>
+                                                    </tr>
+                                                    <tr class="custom-table-text">
+                                                      <td class="d-none d-sm-table-cell">5</td>
+                                                      <td><img src="images/employee5.png"></td>
+                                                      <td>Joris de Jong</td>
+                                                      <td class="d-none d-sm-table-cell">HR medewerker</td>
+                                                      <td class="d-none d-sm-table-cell">Groep A</td>
+                                                      <td>58 punten</td>
+                                                      <td class="d-none d-sm-table-cell">Bekijk</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                      </div>
-                    </div>
-            </div><!-- End of row -->
+                            <div class="col-xl-4 col-lg-12">
+                                <div class="card shadow mb-4 border-0">
+                                    <div class="card-header bg-white border-0">
+                                        <div class="float-left">
+                                            <div class="widget-heading">Activatiestatistieken</div>
+                                        </div>
+                                            <div class="float-right">
+                                                <div class="float-right">  
+                                                <div class="dropdown no-arrow">
+                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fa-sm fa-fw text-gray-400"></i>
+                                                    </a>
+                                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 18px, 0px);">
+                                                <div class="dropdown-header">Selecteer activiteit</div>
+                                                <a class="dropdown-item" href="#">Dag</a>
+                                                <a class="dropdown-item" href="#">Week</a>
+                                                <a class="dropdown-item" href="#">Maand</a>
+                                                </div>
+                                                </div>
+                                                </div>  
+                                            </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="widget-subheading">Totaal aantal gebruikers: 3784</div>
+                                        <div class="chart-pie pt-4 pb-2">
+                                            <div class="chartjs-size-monitor">
+                                            <div class="chartjs-size-monitor-expand">
+                                                <div class=""></div>
+                                            </div>
+                                            <div class="chartjs-size-monitor-shrink">
+                                                <div class=""></div>
+                                            </div>
+                                            </div>
+                                        <canvas id="myPieChart" width="328" height="306" class="chartjs-render-monitor" style="display: block; height: 245px; width: 263px;"></canvas>
+                                        </div>
+                                        <div class="mt-4 text-center small">
+                                            <span class="mr-2">
+                                              <i class="fas fa-circle purple-circle"></i> Actief - 58%
+                                            </span>
+                                            <span class="mr-2">
+                                              <i class="fas fa-circle darkblue-circle"></i> Niet geactiveerd - 35%
+                                            </span>
+                                            <span class="mr-2">
+                                              <i class="fas fa-circle blue-circle"></i> Gevalideerd - 7%
+                                            </span>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End of row -->
+         
                         
             </div> <!-- End of container fluid -->
       </div> <!-- End of Content Wrapper -->
@@ -448,7 +503,8 @@
 
   <!-- Page level custom scripts -->
   <script src="js/datatables-demo.js"></script>
-  <script src="js/chart-area-demo.js"></script>
+  <script src="js/chart-area-demo2.js"></script>
+  <script src="js/chart-pie-demo.js"></script>
         
     </body>
     
