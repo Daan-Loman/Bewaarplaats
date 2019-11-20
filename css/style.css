@@ -239,6 +239,9 @@ a[data-toggle="collapse"] {
     #sidebar .sidebar-header strong {
         font-size: 0.65rem;
     }
+    .widget-description {
+        display: none;
+    }
 }
 
 .username {
