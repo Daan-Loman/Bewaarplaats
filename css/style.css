@@ -73,6 +73,11 @@ span {
 #sidebar.active .sidebar-header strong {
     display: block;
     color: #fff;
+}
+
+#sidebar .sidebar-header strong {
+    display: block;
+    color: #fff;
     font-size: 1.3rem;
 }
 
@@ -97,6 +102,12 @@ span {
     padding: 10px !important;
 }
 
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #F8F8F8;
+}
+
 #sidebar.active .dropdown-toggle::after {
     top: auto;
     bottom: 10px;
@@ -114,7 +125,6 @@ span {
 
 #sidebar .sidebar-header strong {
     display: none;
-    font-size: 1.8rem;
 }
 
 #sidebar ul.components {
@@ -199,6 +209,7 @@ a[data-toggle="collapse"] {
     
     #sidebar .sidebar-header strong {
         display: block;
+        font-size: 0.85rem;
     }
     #sidebar ul li a {
         padding: 20px 10px;
@@ -222,4 +233,26 @@ a[data-toggle="collapse"] {
     #sidebarCollapse span {
         display: none;
     }
+}
+
+@media (max-width: 375px) {
+    #sidebar .sidebar-header strong {
+        font-size: 0.65rem;
+    }
+}
+
+.username {
+    font-size: 0.85rem;
+}
+
+.widget-description {
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    float: right;
+    margin-left: 10px;
+}
+
+.page-title {
+    font-size: 28px;
+    color: #922E88;
 }
