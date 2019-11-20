@@ -39,29 +39,37 @@
                 <li>
                     <a href="#">
                         <i class="fas fa-chart-bar"></i>
-                        About
+                        Overzicht
                     </a>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-copy"></i>
-                        Pages
-                    </a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fas fa-image"></i>
-                        Portfolio
+                        <i class="fas fa-envelope"></i>
+                        Berichten
                     </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-users"></i>
+                        Gebruikers
+                    </a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Dropdown
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Dropdown 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Dropdown 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Dropdown 3</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">
@@ -81,7 +89,7 @@
         <!-- Page Content  -->
         <div id="content">
 
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg mb-4">
                 <div class="container-fluid">
 
                     <button type="button" id="sidebarCollapse" class="btn">
@@ -96,14 +104,99 @@
                         
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><span class="mr-2 d-none d-lg-inline">Hanne de Jong</span><img class="img-profile rounded-circle" src="images/Avatar.png"></a>
+                                <a class="nav-link" href="#"><span class="mr-2 d-none d-lg-inline username">Hanne de Jong</span><img class="img-profile rounded-circle" src="images/Avatar.png"></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </div>
+            </nav> <!-- End of navbar -->
+        <div class="container-fluid">
+            <!-- Page Heading -->
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <h1 class="page-title">Overzicht</h1>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-6">
+                    <div class="card shadow mb-4 border-0">
+                        <div class="card-header bg-white border-0">
+                            <div class="float-left">
+                                <div class="widget-heading">Aantal logins</div>
+                            </div>
+                            <div class="float-right">
+                                <div class="widget-subheading">Afgelopen 7 dagen</div>
+                            </div>
+                        </div>
+                            <div class="card-body">
+                                <div class="float-left">
+                                    <span>19.234</span>
+                                    <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>0,1%</span></div>
+                                </div>
+                                <div class="float-right"><img src="images/Daling.png"></div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card shadow mb-4 border-0">
+                        <div class="card-header bg-white border-0">
+                            <div class="float-left">
+                                <div class="widget-heading">Unieke logins</div>
+                            </div>
+                            <div class="float-right">
+                                <div class="widget-subheading">Afgelopen 7 dagen</div>
+                            </div>
+                        </div>
+                            <div class="card-body">
+                                <div class="float-left">
+                                    <span>1.643</span>
+                                    <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>0,1%</span></div>
+                                </div>
+                                <div class="float-right"><img src="images/Groei.png"></div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card shadow mb-4 border-0">
+                        <div class="card-header bg-white border-0">
+                            <div class="float-left">
+                                <div class="widget-heading">Gem. logins</div>
+                            </div>
+                            <div class="float-right">
+                                <div class="widget-subheading">Afgelopen 7 dagen</div>
+                            </div>
+                        </div>
+                            <div class="card-body">
+                                <div class="float-left">
+                                    <span>11,7</span>
+                                    <div class="widget-description text-danger"><i class="fa fa-arrow-down"></i><span>0,1%</span></div>
+                                </div>
+                                <div class="float-right"><img src="images/Daling.png"></div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card shadow mb-4 border-0">
+                        <div class="card-header bg-white border-0">
+                            <div class="float-left">
+                                <div class="widget-heading">Sessieduur</div>
+                            </div>
+                            <div class="float-right">
+                                <div class="widget-subheading">Afgelopen 7 dagen</div>
+                            </div>
+                        </div>
+                            <div class="card-body">
+                                <div class="float-left">
+                                    <span>4m 2s</span>
+                                    <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>0,1%</span></div>
+                                </div>
+                                <div class="float-right"><img src="images/Groei.png"></div>
+                            </div>
+                    </div>
+                </div>
+            </div> <!-- End of row -->
+            </div>  <!-- End of container -->  
+            
+        </div> <!-- End of page content -->
+    </div> <!-- End of Wrapper -->
         
         <!-- jQuery v3.4.1  -->
         <script src="js/jquery.min.js"></script>
