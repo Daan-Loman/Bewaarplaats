@@ -2,510 +2,123 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <title>Incrowd Dashboard</title>
 
-  <title>Incrowd - Dashboard</title>
+    <!-- Bootstrap v4.3.1 CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
-        
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style.css">
 
 </head>
-    
-    <body id="page-top">
-
-  <!-- Page Wrapper -->
-  <div id="wrapper">
-
-    <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center mb-3" href="index.html">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <img src="images/incrowd.png">
-        </div>
-        <div class="sidebar-brand-text mx-3">Incrowd</div>
-      </a>
-
-
-        
-
-
-      <!-- Nav Item - Updates -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-home"></i>
-          <span>Home</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Dashboard
-      </div>
-        
-      <!-- Nav Item - Overzicht -->
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Overzicht</span></a>
-      </li>
-        
-      <!-- Nav Item - Berichten -->
-      <li class="nav-item">
-        <a class="nav-link" href="berichten.html">
-          <i class="fas fa-envelope"></i>
-          <span>Berichten</span></a>
-      </li>
-        
-      <!-- Nav Item - Gebruikers -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-users"></i>
-          <span>Gebruikers</span></a>
-      </li>
-
-
-
-
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Management
-      </div>
-
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Pages</h6>
-            <a class="collapse-item" href="login.html">Categorieën</a>
-            <a class="collapse-item" href="register.html">Menu's</a>
-            <a class="collapse-item" href="forgot-password.html">Emails</a>
-          </div>
-        </div>
-      </li>
-
-
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
-
-      <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-      </div>
-
-    </ul>
-    <!-- End of Sidebar -->
-
-    <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
-
-      <!-- Main Content -->
-      <div id="content">
-
-        <!-- Topbar -->
-        <nav class="navbar navbar-expand  bg-white topbar mb-4 static-top shadow">
-
-          <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn d-md-none rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
-
-          <!-- Topbar Navbar -->
-          <ul class="navbar-nav ml-auto">
-
-            <div class="topbar-divider d-none d-sm-block"></div>
-
-            <!-- Nav Item - User Information -->
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline">Hanne de Jong</span>
-                <img class="img-profile rounded-circle" src="images/Avatar.png">
-              </a>
-              <!-- Dropdown - User Information -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2"></i>
-                  Profile
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2"></i>
-                  Settings
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-list fa-sm fa-fw mr-2"></i>
-                  Activity Log
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
-                </a>
-              </div>
-            </li>
-
-          </ul>
-
-        </nav>
-        <!-- End of Topbar -->
-        </div>
-        
-                    <div class="container-fluid">
-                    
-            <!-- Page Heading -->
-            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                <h1 class="page-title">Overzicht</h1>
+    <body>
+        <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3 class="brand-title">Incrowd</h3>
+                <strong>IN</strong>
             </div>
-                
-                        <div class="row">
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card shadow mb-4 border-0">
-                                    <div class="card-header bg-white border-0">
-                                        <div class="float-left">
-                                            <div class="widget-heading">Aantal logins</div>
-                                        </div>
-                                        <div class="float-right">
-                                            <div class="widget-subheading">Afgelopen 7 dagen</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="float-left">
-                                            <div class="widget-numbers"><span>19.234</span>
-                                            <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>1,8%</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="float-right"><img src="images/Groei.png"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card shadow mb-4 border-0">
-                                    <div class="card-header bg-white border-0">
-                                        <div class="float-left">
-                                            <div class="widget-heading">Unieke logins</div>
-                                        </div>
-                                        <div class="float-right">
-                                            <div class="widget-subheading">Afgelopen 7 dagen</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="float-left">
-                                            <div class="widget-numbers"><span>1.643</span>
-                                            <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>0,1%</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="float-right"><img src="images/Groei.png"></div>
-                                    </div>
-                                </div>
-                                </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card shadow mb-4 border-0">
-                                    <div class="card-header bg-white border-0">
-                                        <div class="float-left">
-                                            <div class="widget-heading">Gem. logins</div>
-                                        </div>
-                                        <div class="float-right">
-                                            <div class="widget-subheading">Afgelopen 7 dagen</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="float-left">
-                                            <div class="widget-numbers"><span>11,7</span>
-                                            <div class="widget-description text-danger"><i class="fa fa-arrow-down"></i><span>0,8%</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="float-right"><img src="images/Daling.png"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card shadow mb-4 border-0">
-                                    <div class="card-header bg-white border-0">
-                                        <div class="float-left">
-                                            <div class="widget-heading">Sessieduur</div>
-                                        </div>
-                                        <div class="float-right">
-                                            <div class="widget-subheading">Afgelopen 7 dagen</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="float-left">
-                                            <div class="widget-numbers"><span>4m 2s</span>
-                                            <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>9,8%</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="float-right"><img src="images/Groei.png"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- End of Row -->
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        About
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Pages
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>   
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    
+                    <button class="btn d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         
-                        <div class="row">
-                            <div class="col-xl-8 col-lg-12">
-                                <div class="card shadow mb-4 border-0">
-                                    <div class="card-header bg-white border-0">
-                                        <div class="float-left">
-                                            <div class="widget-heading">Aantal logins</div>
-                                        </div>
-                                        <div class="float-right">
-                                            <div class="float-right">  
-                                            <div class="dropdown no-arrow">
-                                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <i class="fa-sm fa-fw text-gray-400"></i>
-                                                </a>
-                                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 18px, 0px);">
-                                            <div class="dropdown-header">Selecteer activiteit</div>
-                                            <a class="dropdown-item" href="#">Dag</a>
-                                            <a class="dropdown-item" href="#">Week</a>
-                                            <a class="dropdown-item" href="#">Maand</a>
-                                            </div>
-                                            </div>
-                                            </div>  
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-12">
-                                <div class="card shadow mb-4 border-0">
-                                    <div class="card-header bg-white border-0">
-                                        <div class="float-left">
-                                            <div class="widget-heading">Top items</div>
-                                        </div>
-                                        <div class="float-right">
-                                            <div class="float-right">
-                                                <button type="button" class="btn btn-outline-custom">
-                                            <div class="dropdown no-arrow">
-                                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <i class="fa-sm fa-fw text-gray-400"></i>Weergaven
-                                                </a>
-                                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 18px, 0px);">
-                                            <div class="dropdown-header">Selecteer activiteit</div>
-                                            <a class="dropdown-item" href="#">Weergaven</a>
-                                            <a class="dropdown-item" href="#">Likes</a>
-                                            <a class="dropdown-item" href="#">Reacties</a>
-                                            </div>
-                                            </div>
-                                                </button>
-                                            </div>  
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                    <table class="table" id="dataTable" width="100%" cellspacing="0">
-    
-
-                                  <tbody>
-                                    <tr class="custom-table-text">  
-                                      <td>Nieuwsfeed</td>   
-                                      <td class="float-right">13.213</td>   
-                                    </tr>
-                                    <tr class="custom-table-text">  
-                                      <td>Contactenlijst</td>   
-                                      <td class="float-right">12.898</td>   
-                                    </tr>
-                                    <tr class="custom-table-text">  
-                                      <td>Tips & tricks</td>   
-                                      <td class="float-right">11.943</td>   
-                                    </tr>
-                                    <tr class="custom-table-text">  
-                                      <td>Product trainingen</td>   
-                                      <td class="float-right">11.714</td>   
-                                    </tr>
-                                    <tr class="custom-table-text">  
-                                      <td>Wijzigingen</td>   
-                                      <td class="float-right">11.213</td>   
-                                    </tr>
-                                </tbody>
-                                </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- End of row -->
-                        
-                        <div class="row">
-                            <div class="col-xl-8 col-lg-12">
-                                <div class="card shadow mb-4 border-0">
-                                    <div class="card-header bg-white border-0">
-                                        <div class="float-left">
-                                            <div class="widget-heading">Activity score</div>
-                                        </div>
-                                        <div class="float-right">
-                                            <div class="widget-subheading">Afgelopen 7 dagen</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="table-responsive">
-                                            <table class="table" id="dataTable" width="100%" cellspacing="0">
-                                              <thead>
-                                                <tr class="custom-table-text">
-                                                  <th class="d-none d-sm-table-cell">#</th>
-                                                  <th>Avatar</th>
-                                                  <th>Naam</th>
-                                                  <th class="d-none d-sm-table-cell">Functie</th>
-                                                  <th class="d-none d-sm-table-cell">Groep</th>
-                                                  <th>Punten</th>
-                                                  <th class="d-none d-sm-table-cell">Details</th>
-                                                </tr>
-                                              </thead>
-                                                <tbody>
-                                                    <tr class="custom-table-text">
-                                                      <td class="d-none d-sm-table-cell">1</td>
-                                                      <td><img src="images/employee1.png"></td>
-                                                      <td>Sarah Jansen</td>
-                                                      <td class="d-none d-sm-table-cell">HR medewerker</td>
-                                                      <td class="d-none d-sm-table-cell">Groep A</td>
-                                                      <td>90 punten</td>
-                                                      <td class="d-none d-sm-table-cell">Bekijk</td>
-                                                    </tr>
-                                                      <tr class="custom-table-text">
-                                                      <td class="d-none d-sm-table-cell">2</td>
-                                                      <td><img src="images/employee2.png"></td>
-                                                      <td>Lukas Woudenberg</td>
-                                                      <td class="d-none d-sm-table-cell">Store manager</td>
-                                                      <td class="d-none d-sm-table-cell">Groep B, Groep D</td>
-                                                      <td>82 punten</td>
-                                                      <td class="d-none d-sm-table-cell">Bekijk</td>
-                                                    </tr>
-                                                    <tr class="custom-table-text">
-                                                      <td class="d-none d-sm-table-cell">3</td>
-                                                      <td><img src="images/employee3.png"></td>
-                                                      <td>Gijs Mulder</td>
-                                                      <td class="d-none d-sm-table-cell">Marketing manager</td>
-                                                      <td class="d-none d-sm-table-cell">Groep C, Groep D</td>
-                                                      <td>75 punten</td>
-                                                      <td class="d-none d-sm-table-cell">Bekijk</td>
-                                                    </tr>
-                                                    <tr class="custom-table-text">
-                                                      <td class="d-none d-sm-table-cell">4</td>
-                                                      <td><img src="images/employee4.png"></td>
-                                                      <td>Iris Huk</td>
-                                                      <td class="d-none d-sm-table-cell">HR manager</td>
-                                                      <td class="d-none d-sm-table-cell">Groep A, Groep D</td>
-                                                      <td>65 punten</td>
-                                                      <td class="d-none d-sm-table-cell">Bekijk</td>
-                                                    </tr>
-                                                    <tr class="custom-table-text">
-                                                      <td class="d-none d-sm-table-cell">5</td>
-                                                      <td><img src="images/employee5.png"></td>
-                                                      <td>Joris de Jong</td>
-                                                      <td class="d-none d-sm-table-cell">HR medewerker</td>
-                                                      <td class="d-none d-sm-table-cell">Groep A</td>
-                                                      <td>58 punten</td>
-                                                      <td class="d-none d-sm-table-cell">Bekijk</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-12">
-                                <div class="card shadow mb-4 border-0">
-                                    <div class="card-header bg-white border-0">
-                                        <div class="float-left">
-                                            <div class="widget-heading">Activatiestatistieken</div>
-                                        </div>
-                                            <div class="float-right">
-                                                <div class="float-right">  
-                                                <div class="dropdown no-arrow">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fa-sm fa-fw text-gray-400"></i>
-                                                    </a>
-                                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 18px, 0px);">
-                                                <div class="dropdown-header">Selecteer activiteit</div>
-                                                <a class="dropdown-item" href="#">Dag</a>
-                                                <a class="dropdown-item" href="#">Week</a>
-                                                <a class="dropdown-item" href="#">Maand</a>
-                                                </div>
-                                                </div>
-                                                </div>  
-                                            </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="widget-subheading">Totaal aantal gebruikers: 3784</div>
-                                        <div class="chart-pie pt-4 pb-2">
-                                            <div class="chartjs-size-monitor">
-                                            <div class="chartjs-size-monitor-expand">
-                                                <div class=""></div>
-                                            </div>
-                                            <div class="chartjs-size-monitor-shrink">
-                                                <div class=""></div>
-                                            </div>
-                                            </div>
-                                        <canvas id="myPieChart" width="328" height="306" class="chartjs-render-monitor" style="display: block; height: 245px; width: 263px;"></canvas>
-                                        </div>
-                                        <div class="mt-4 text-center small">
-                                            <span class="mr-2">
-                                              <i class="fas fa-circle purple-circle"></i> Actief - 58%
-                                            </span>
-                                            <span class="mr-2">
-                                              <i class="fas fa-circle darkblue-circle"></i> Niet geactiveerd - 35%
-                                            </span>
-                                            <span class="mr-2">
-                                              <i class="fas fa-circle blue-circle"></i> Gevalideerd - 7%
-                                            </span>
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- End of row -->
-         
-                        
-            </div> <!-- End of container fluid -->
-      </div> <!-- End of Content Wrapper -->
-    </div> <!-- End of Page wrapper -->
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="mr-2 d-none d-lg-inline">Hanne de Jong</span><img class="img-profile rounded-circle" src="images/Avatar.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
         
-
-    
-
+        <!-- jQuery v3.4.1  -->
+        <script src="js/jquery.min.js"></script>
         
-         <!-- Bootstrap core JavaScript-->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="js/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="js/custom.js"></script>
-    
-
-  <!-- Page level plugins -->
-  <script src="js/jquery.dataTables.min.js"></script>
-  <script src="js/dataTables.bootstrap4.min.js"></script>
-  <script src="js/Chart.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="js/datatables-demo.js"></script>
-  <script src="js/chart-area-demo2.js"></script>
-  <script src="js/chart-pie-demo.js"></script>
+        <!-- Bootstrap JS v4.3.1 -->
+        <script src="js/bootstrap.bundle.min.js"></script>
         
-    </body>
-    
+        <!-- Sidebar collapse function -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
+        
+    </body>    
 </html>
