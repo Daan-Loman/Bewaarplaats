@@ -65,6 +65,7 @@ span {
     text-align: center;
 }
 
+
 #sidebar.active .sidebar-header h3,
 #sidebar.active .CTAs {
     display: none;
@@ -101,11 +102,11 @@ span {
 #sidebar.active ul ul a {
     padding: 10px !important;
 }
-
+ 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #F8F8F8;
+    
 }
 
 #sidebar.active .dropdown-toggle::after {
@@ -258,4 +259,29 @@ a[data-toggle="collapse"] {
 .page-title {
     font-size: 28px;
     color: #922E88;
+}
+
+/* ---------------------------------------------------
+   Button style
+----------------------------------------------------- */
+.btn-primary.btn-simple {
+    color: #A8369B;
+    border-color: #A8369B;
+    background-color: transparent;
+}
+
+.btn:not(:disabled):not(.disabled).active, .btn:not(:disabled):not(.disabled):active {
+    box-shadow: 2px 2px 6px rgba(0,0,0,.4);
+    background-color: #A8369B;
+    border-color: #A8369B;
+}
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.custom-table-text {
+    font-family: Source Sans Pro Light;
+    font-size: 13px;
 }
