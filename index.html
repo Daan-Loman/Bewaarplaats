@@ -21,6 +21,14 @@
 
 </head>
     <body>
+        
+        <!-- PRE LOADER -->
+         <section class="preloader">
+              <div class="spinner">
+                   <span class="spinner-rotate"></span>
+              </div>
+         </section>
+        
         <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
@@ -89,7 +97,7 @@
         <!-- Page Content  -->
         <div id="content" class="d-flex flex-column">
 
-            <nav class="navbar fixed-header mb-4">
+            <nav class="navbar mb-4">
                 <div class="container-fluid">
 
                     <button type="button" id="sidebarCollapse" class="btn">
@@ -147,7 +155,7 @@
                         </div>
                             <div class="card-body">
                                 <div class="float-left">
-                                    <span>19.234</span>
+                                    <span class="widget-numbers">19.234</span>
                                     <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>0,1%</span></div>
                                 </div>
                                 <div class="float-right"><img src="images/Groei.png"></div>
@@ -166,7 +174,7 @@
                         </div>
                             <div class="card-body">
                                 <div class="float-left">
-                                    <span>1.643</span>
+                                    <span class="widget-numbers">1.643</span>
                                     <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>0,1%</span></div>
                                 </div>
                                 <div class="float-right"><img src="images/Groei.png"></div>
@@ -185,7 +193,7 @@
                         </div>
                             <div class="card-body">
                                 <div class="float-left">
-                                    <span>11,7</span>
+                                    <span class="widget-numbers">11,7</span>
                                     <div class="widget-description text-danger"><i class="fa fa-arrow-down"></i><span>0,1%</span></div>
                                 </div>
                                 <div class="float-right"><img src="images/Daling.png"></div>
@@ -204,7 +212,7 @@
                         </div>
                             <div class="card-body">
                                 <div class="float-left">
-                                    <span>4m 2s</span>
+                                    <span class="widget-numbers">4m 2s</span>
                                     <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>0,1%</span></div>
                                 </div>
                                 <div class="float-right"><img src="images/Groei.png"></div>
@@ -213,8 +221,8 @@
                 </div>
             </div> <!-- End of row -->
             <div class="row">
-                                <div class="col-xl-8 col-lg-12 mb-4"> 
-                                    <div class="card shadow border-0">
+                                <div class="col-xl-8 col-lg-12 mb-4 d-flex"> 
+                                    <div class="card shadow border-0 flex-fill">
                                         <div class="card-header bg-white border-0">
                                                 <div class="float-left">
                                                     <div class="widget-heading">Aantal logins</div>
@@ -230,34 +238,35 @@
                                         </div>
                                     </div>    
                                 </div>
-                            <div class="col-xl-4 col-lg-12">
-                                <div class="card shadow mb-4 border-0">
+                            <div class="col-xl-4 col-lg-12 mb-4">
+                                <div class="card shadow border-0">
                                     <div class="card-header bg-white border-0">
                                         <div class="float-left">
                                             <div class="widget-heading">Top items</div>
                                         </div>
                                         <div class="float-right">
-                                            <div class="float-right">
-                                                <button type="button" class="btn btn-outline-custom">
-                                            <div class="dropdown no-arrow">
-                                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <i class="fa-sm fa-fw text-gray-400"></i>Weergaven
-                                                </a>
-                                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 18px, 0px);">
-                                            <div class="dropdown-header">Selecteer activiteit</div>
-                                            <a class="dropdown-item" href="#">Weergaven</a>
-                                            <a class="dropdown-item" href="#">Likes</a>
-                                            <a class="dropdown-item" href="#">Reacties</a>
+                                                <div class="float-right">  
+                                                <div class="dropdown no-arrow">
+                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fa-sm fa-fw text-gray-400"></i>
+                                                    </a>
+                                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 18px, 0px);">
+                                                <div class="dropdown-header">Selecteer activiteit</div>
+                                                <a class="dropdown-item" href="#">Dag</a>
+                                                <a class="dropdown-item" href="#">Week</a>
+                                                <a class="dropdown-item" href="#">Maand</a>
+                                                </div>
+                                                </div>
+                                                </div>  
                                             </div>
-                                            </div>
-                                                </button>
-                                            </div>  
-                                        </div>
                                     </div>
                                     <div class="card-body">
                                     <table class="table" id="dataTable" width="100%" cellspacing="0">
     
-
+                                <thead> <tr class="custom-table-text">  
+                                      <th class="border-0">Item</th>   
+                                      <th class="float-right border-0">Weergaven</th>   
+                                    </tr></thead>
                                   <tbody>
                                     <tr class="custom-table-text">  
                                       <td>Nieuwsfeed</td>   
@@ -363,8 +372,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-12">
-                                <div class="card shadow mb-4 border-0">
+                            <div class="col-xl-4 col-lg-12 d-flex">
+                                <div class="card shadow mb-4 border-0 flex-fill">
                                     <div class="card-header bg-white border-0">
                                         <div class="float-left">
                                             <div class="widget-heading">Activatiestatistieken</div>
@@ -418,6 +427,16 @@
         </div> <!-- End of page content -->
     </div> <!-- End of Wrapper -->
         
+              <!-- Footer -->
+              <footer class="sticky-footer bg-white mb-4">
+                <div class="container my-auto">
+                  <div class="copyright text-center my-auto">
+                    <span>&copy; Made by <a href="https://www.daanloman.nl" target="_blank" class="purple-circle">Daan Loman</a> 2019</span>
+                  </div>
+                </div>
+              </footer>
+              <!-- End of Footer -->
+        
         <!-- jQuery v3.4.1  -->
         <script src="js/jquery.min.js"></script>
         
@@ -425,11 +444,14 @@
         <script src="js/bootstrap.bundle.min.js"></script>
         
         <!-- Page level plugins -->
+        <script src="js/custom.js"></script>
         <script src="js/Chart.min.js"></script>
 
         <!-- Page level custom scripts -->
         <script src="js/chart-pie-demo.js"></script>
         <script src="js/logins.js"></script>
+        
+
         
         <!-- Sidebar collapse function -->
         <script type="text/javascript">
@@ -446,7 +468,7 @@
                 $(this).siblings().removeClass('active')
                 $(this).addClass('active');
             })
-          </script>
+        </script>
         
     </body>    
 </html>
