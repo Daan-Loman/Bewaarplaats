@@ -179,6 +179,7 @@ a[data-toggle="collapse"] {
     min-height: 100vh;
     transition: all 0.3s;
     background-color: #F3F3F9;
+    overflow-x: hidden;
 }
 
 /* ---------------------------------------------------
@@ -243,6 +244,9 @@ a[data-toggle="collapse"] {
     .widget-subheading {
         font-size: 0.65rem;
     }
+    .nav-link {
+        padding: 0;
+    }
 }
 
 .username {
@@ -285,3 +289,21 @@ a[data-toggle="collapse"] {
     font-family: Source Sans Pro Light;
     font-size: 13px;
 }
+
+/* ---------------------------------------------------
+   LEGENDA
+----------------------------------------------------- */
+
+.purple-circle {
+    color: #A8369B;
+}
+
+.blue-circle {
+    color: #3498DB;
+}
+
+.darkblue-circle {
+    color: #392C70;
+}
+
+

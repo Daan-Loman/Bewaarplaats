@@ -57,6 +57,7 @@
                           color: "rgb(234, 236, 244)",
                           zeroLineColor: "rgb(234, 236, 244)",
                           drawBorder: false,
+                          autoSkip: true,
                           borderDash: [2],
                           zeroLineBorderDash: [2]
                         },
