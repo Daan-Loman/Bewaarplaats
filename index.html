@@ -22,26 +22,31 @@
 </head>
     <body>
         
-
+        <!-- PRE LOADER -->
+         <section class="preloader">
+              <div class="spinner">
+                   <span class="spinner-rotate"></span>
+              </div>
+         </section>
         
         <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-sticky">
             <div class="sidebar-header">
-                <h3><img class="logo" src="images/logo.svg" alt=""></h3>
-                <strong><img src="images/logo_mini.svg" alt=""> </strong>
+                <h3><img class="logo" src="images/logo-icon.png" alt="">Incrowd</h3>
+                <strong><img src="images/logo-icon.png" alt=""> </strong>
             </div>
             
             <ul class="list-unstyled components">
-                <hr class="sidebar-divider">
+                
                 <li>
                     <a href="#">
                         <i class="fas fa-home"></i>
                         Home
                     </a>
                 </li>
-                <hr class="sidebar-divider">
+         
                 <div class="sidebar-heading">
                     Dashboard
                 </div>
@@ -63,7 +68,7 @@
                         Gebruikers
                     </a>
                 </li>
-                <hr class="sidebar-divider">
+           
                 <div class="sidebar-heading">
                     Overige
                 </div>
@@ -102,29 +107,33 @@
         <!-- Page Content  -->
         <div id="content" class="d-flex flex-column">
             
-            <nav class="navbar mb-4 mob-fixed">
+            <nav class="navbar shadow-sm mb-4 mob-fixed">
                 <div class="container-fluid pl-0 pr-0">
 
                     <button type="button" id="sidebarCollapse" class="btn">
                         <i class="fas fa-align-left"></i>
                     </button>
                     
-                              <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control border-0 small" placeholder="Zoeken" aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-purple" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
-            </div>
-          </form>
+                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    <div class="input-group">
+                      <input type="text" class="form-control border-0 small shadow-sm rounded-lg" placeholder="Zoeken" aria-label="Search" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-purple" type="button">
+                          <i class="fas fa-search fa-sm purple-circle"></i>
+                        </button>
+                      </div>
+                    </div>
+              </form>
+                    
+              <div class="navbar-logo">
+                <h3><img class="logo" src="images/logo-icon.png" alt="">Incrowd</h3>    
+              </div>    
                     
                         <ul class="nav  ml-auto">
                             <!-- Nav Item - User Information -->
                             <li class="nav-item dropdown no-arrow">
                               <a class="nav-link p-0" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline">Hanne de Jong</span>
+                                <span class="mr-2 d-none d-lg-inline username">Hanne de Jong</span>
                                 <img class="rounded-circle" src="images/Avatar.png">
                               </a>
                               <!-- Dropdown - User Information -->
@@ -156,10 +165,19 @@
         <div class="container-fluid">
             <!-- Page Heading -->
             <div class="row">
-              <div class="col-12">
+              <div class="col-md-5 mb-2">
                 <h1 class="page-title">Overzicht</h1>
-                <p class="text-gray">Welkom terug, Hanne de Jong!</p>
+                <p class="text-gray username">Welkom terug, Hanne de Jong!</p>
               </div>
+                <div class="col-md-7 mb-4 align-self-center">
+                    <div class="customize-input fl-btn">
+                            <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+                                <option selected="">Aug 19</option>
+                                <option value="1">July 19</option>
+                                <option value="2">Jun 19</option>
+                            </select>
+                        </div>                  
+                    </div>
             </div>
             <div class="row">
                 <div class="col-xl-3 col-md-6">
@@ -249,7 +267,7 @@
                                                 <div class="btn-group float-right">
                                                     <button class="btn btn-sm btn-primary btn-simple" onclick="perUur()">Afgelopen 24 uur</button>
                                                     <button class="btn btn-sm btn-primary btn-simple" onclick="perMaand()">Afgelopen maand</button>
-                                                    <button class="btn btn-sm btn-primary btn-simple" onclick="perJaar()">Afgelopen jaar</button>
+                                                    <button class="btn btn-sm btn-primary btn-simple active" onclick="perJaar()">Afgelopen jaar</button>
                                                 </div> 
                                         </div>
                                         <div class="card-body">    
@@ -463,20 +481,21 @@
                                 </div>
                             </div>
                         </div> <!-- End of row -->
+            
+            <!-- Footer -->
+              <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                  <div class="copyright text-center my-auto">
+                    <span class="username">&copy; Made by <a href="https://www.daanloman.nl" target="_blank" class="purple-circle">Daan Loman</a> 2019</span>
+                  </div>
+                </div>
+              </footer>
+              <!-- End of Footer -->
             </div>  <!-- End of container -->  
             
         </div> <!-- End of page content -->
     </div> <!-- End of Wrapper -->
         
-              <!-- Footer -->
-              <footer class="sticky-footer bg-white mb-4">
-                <div class="container my-auto">
-                  <div class="copyright text-center my-auto">
-                    <span>&copy; Made by <a href="https://www.daanloman.nl" target="_blank" class="purple-circle">Daan Loman</a> 2019</span>
-                  </div>
-                </div>
-              </footer>
-              <!-- End of Footer -->
         
         <!-- jQuery v3.4.1  -->
         <script src="js/jquery.min.js"></script>
@@ -485,6 +504,7 @@
         <script src="js/bootstrap.bundle.min.js"></script>
         
         <!-- Page level plugins -->
+        <script src="js/custom.js"></script>
         <script src="js/Chart.min.js"></script>
 
         <!-- Page level custom scripts -->
@@ -492,6 +512,7 @@
         <script src="js/activityscore.js"></script>
         <script src="js/logins.js"></script>
         
+     
 
         
         <!-- Sidebar collapse function -->

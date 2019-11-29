@@ -12,7 +12,7 @@ a:focus {
 }
 
 .navbar {
-    background: #fbfcfd;
+    background: #fff;
     border: none;
     border-radius: 0;
     
@@ -29,6 +29,11 @@ a:focus {
     height: 1px;
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
+}
+
+.align-self-center {
+    -ms-flex-item-align: center!important;
+    align-self: center!important;
 }
 
 i,
@@ -48,7 +53,6 @@ span {
 .wrapper {
     display: flex;
     align-items: stretch;
-   
 }
 
 #sidebar {
@@ -101,6 +105,11 @@ span {
 
 #sidebar.active ul ul a {
     padding: 10px !important;
+}
+
+#sidebar.active .sidebar-heading {
+    text-align: center;
+    padding: 0;
 }
  
 #sidebar ul li.active>a,
@@ -177,7 +186,7 @@ a[data-toggle="collapse"] {
     width: 100%;
     min-height: 100vh;
     transition: all 0.3s;
-    background-color: #fbfcfd;
+    background-color: #f1f4f6;
     border-left: 1px solid #d1d1d1;
 }
 
@@ -247,6 +256,13 @@ a[data-toggle="collapse"] {
         .sidebar-heading {
             padding: 0;
     }
+         .fl-btn {
+    float: none!important;
+}
+    .navbar-logo {
+        margin: auto;
+         display: flex!important;
+    }
 }
 
 @media (max-width: 375px) {
@@ -272,11 +288,24 @@ a[data-toggle="collapse"] {
     .sidebar-heading {
         padding: 0;
     }
+    
+     .fl-btn {
+    float: none!important;
+}
+     .navbar-logo {
+        margin: auto;
+         display: flex!important;
+    }
 }
 
 /* ---------------------------------------------------
    Text styling
 ----------------------------------------------------- */
+
+     .navbar-logo {
+        margin: auto;
+         display: none;
+    }
 
 .username {
     font-size: 0.85rem;
@@ -437,6 +466,9 @@ a[data-toggle="collapse"] {
     .page-title-actions {
         margin: 15px auto 0;
 }
+    .fl-btn {
+    float: none;
+}
 }
 
 .modal-link {
@@ -491,6 +523,7 @@ a[data-toggle="collapse"] {
 
 .sidebar-divider {
     margin: 0 1rem 1rem;
+    border-color: #A8369B;
 }
 
 .sidebar-heading {
@@ -498,4 +531,12 @@ a[data-toggle="collapse"] {
     padding: 15px 30px;
     font-weight: 800;
     font-size: .65rem;
+}
+
+.username {
+    font-size: 80%;
+}
+
+.fl-btn {
+    float: right;
 }
