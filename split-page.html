@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Daan Loman">
+    <title>Incrowd · User Dashboard</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style2.css" rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+</head>
+
+<body>
+
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
+
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <!-- The image half -->
+            <div class="col-md-6 d-none d-md-flex bg-image"></div>
+
+
+            <!-- The content half -->
+            <div class="col-md-6 bg-light">
+                <div class="login d-flex align-items-center py-5">
+
+                    <!-- Demo content-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 col-xl-7 mx-auto">
+                                <h3 class="display-4">Incrowd</h3>
+                                <p class="text-muted mb-4">Welkom! Log in op uw account.</p>
+                                <form>
+                                    <div class="form-group mb-3">
+                                        <input id="inputEmail" type="email" placeholder="Email address" required=""
+                                            autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input id="inputPassword" type="password" placeholder="Password" required=""
+                                            class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input id="customCheck1" type="checkbox" checked class="custom-control-input">
+                                        <label for="customCheck1" class="custom-control-label">Remember password</label>
+                                    </div>
+                                    <button type="submit"
+                                        class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill purple shadow-sm">
+                                        <a href="index.html">Sign in</a>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div><!-- End -->
+
+                </div>
+            </div><!-- End -->
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Javascript files -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="js/Chart.min.js"></script>
+    <script src="js/chart-pie-demo.js"></script>
+    <script src="js/activityscore.js"></script>
+    <script src="js/logins.js"></script>
+
+    <!-- Custom Javascript files -->
+    <script src="js/custom.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+
+    <!-- Change button -->
+    <script>
+        $("button").click(function () {
+            $(this).find("i").toggleClass("fa-times");
+        });
+    </script>
+
+    <!-- Button active class -->
+    <script>
+        $('.btn-group button').on('click', function () {
+            $(this).siblings().removeClass('active')
+            $(this).addClass('active');
+        })
+    </script>
+
+</body>
+
+</html>

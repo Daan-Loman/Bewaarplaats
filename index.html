@@ -1,528 +1,523 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Daan Loman">
+    <title>Incrowd · User Dashboard</title>
 
-    <title>Incrowd Dashboard</title>
 
-    <!-- Bootstrap v4.3.1 CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-
 </head>
-    <body>
 
-        
-        <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div class="sidebar-sticky">
-            <div class="sidebar-header">
-                <h3><img class="logo" src="images/logo-icon.png" alt="">Incrowd</h3>
-                <strong><img src="images/logo-icon.png" alt=""> </strong>
+<body>
+
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-white border-right mt-5" id="sidebar-wrapper">
+
+            <div class="list-group list-group-flush mt-5">
+
+                <li class="nav-small-cap">Dashboard</li>
+
+                <a href="index.html" class="list-group-item list-group-item-action border-0 active"><img class="mr-3"
+                        src="assets/icons/activity-purple.svg">Overzicht</a>
+                <a href="berichten.html" class="list-group-item list-group-item-action border-0"><img class="mr-3"
+                        src="assets/icons/message-square.svg">Berichten</a>
+                <a href="gebruikers.html" class="list-group-item list-group-item-action border-0"><img class="mr-3"
+                        src="assets/icons/users.svg">Gebruikers</a>
+
+                <li class="nav-small-cap">Overige</li>
+
+                <a href="#" class="list-group-item list-group-item-action border-0"><img class="mr-3"
+                        src="assets/icons/info.svg">FAQ</a>
+                <a href="#" class="list-group-item list-group-item-action border-0"><img class="mr-3"
+                        src="assets/icons/coffee.svg">Contact</a>
+
             </div>
-            
-            <ul class="list-unstyled components">
-                
-                <li>
-                    <a href="#">
-                        <i class="fas fa-home"></i>
-                        Home
-                    </a>
-                </li>
-         
-                <div class="sidebar-heading">
-                    Dashboard
-                </div>
-                <li class="active">
-                    <a href="#">
-                        <i class="fas fa-chart-bar"></i>
-                        Overzicht
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-envelope"></i>
-                        Berichten
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-users"></i>
-                        Gebruikers
-                    </a>
-                </li>
-           
-                <div class="sidebar-heading">
-                    Overige
-                </div>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-copy"></i>
-                        Dropdown
-                    </a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Dropdown 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Dropdown 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Dropdown 3</a>
+        </div>
+        <!-- sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+
+                <div class="sidebar-heading"><img src="assets/logo-incrowd-bold.png"> </div>
+
+                <button class="btn" id="menu-toggle"><i class="fas fa-bars"></i></button>
+
+                <!-- Show logo in middle on mobile -->
+
+
+                <div class="navbar-logo"><img src="assets/logo-incrowd-bold.png"></div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-ellipsis-h"></i>
+                </button>
+
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img class="mr-2" width="30px" height="30px" src="assets/Avatar.png">
+                                Hanne de Jong <img src="assets/icons/chevron-down.svg">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"><img class="mr-2"
+                                        src="assets/icons/user.svg">Profiel</a>
+                                <a class="dropdown-item" href="#"><img class="mr-2"
+                                        src="assets/icons/settings.svg">Instellingen</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><img class="mr-2"
+                                        src="assets/icons/log-out.svg">Loguit</a>
+                            </div>
                         </li>
                     </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-question"></i>
-                        FAQ
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-paper-plane"></i>
-                        Contact
-                    </a>
-                </li>
-            </ul>
-            </div>
-        </nav>
-        <!-- Page Content  -->
-        <div id="content" class="d-flex flex-column">
-            
-            <nav class="navbar shadow-sm mb-4 mob-fixed">
-                <div class="container-fluid pl-0 pr-0">
-
-                    <button type="button" id="sidebarCollapse" class="btn">
-                        <i class="fas fa-align-left"></i>
-                    </button>
-                    
-                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                    <div class="input-group">
-                      <input type="text" class="form-control border-0 small shadow-sm rounded-lg" placeholder="Zoeken" aria-label="Search" aria-describedby="basic-addon2">
-                      <div class="input-group-append">
-                        <button class="btn btn-purple" type="button">
-                          <i class="fas fa-search fa-sm purple-circle"></i>
-                        </button>
-                      </div>
-                    </div>
-              </form>
-                    
-              <div class="navbar-logo">
-                <h3><img class="logo" src="images/logo-icon.png" alt="">Incrowd</h3>    
-              </div>    
-                    
-                        <ul class="nav  ml-auto">
-                            <!-- Nav Item - User Information -->
-                            <li class="nav-item dropdown no-arrow">
-                              <a class="nav-link p-0" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline username">Hanne de Jong</span>
-                                <img class="rounded-circle" src="images/Avatar.png">
-                              </a>
-                              <!-- Dropdown - User Information -->
-                              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                  <i class="fas fa-user fa-sm fa-fw mr-2"></i>
-                                  Profiel
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                  <i class="fas fa-cogs fa-sm fa-fw mr-2"></i>
-                                  Instellingen
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                  <i class="fas fa-list fa-sm fa-fw mr-2"></i>
-                                  Activiteiten
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">
-                                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                  Loguit
-                                </a>
-                              </div>
-                            </li>
-                        </ul>
-                
                 </div>
-                
-            </nav> <!-- End of navbar -->
-        <div class="container-fluid">
-            <!-- Page Heading -->
-            <div class="row">
-              <div class="col-md-5 mb-2">
-                <h1 class="page-title">Overzicht</h1>
-                <p class="text-gray username">Welkom terug, Hanne de Jong!</p>
-              </div>
-                <div class="col-md-7 mb-4 align-self-center">
-                    <div class="customize-input fl-btn">
-                            <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+            </nav>
+
+            <!-- Place dynamic content here -->
+            <div class="container-fluid content">
+                <!-- Page Heading -->
+                <div class="row mt-3">
+                    <div class="col-md-5 mb-2">
+                        <h1 class="page-title">Overzicht</h1>
+                        <p class="text-gray">Welkom terug, <strong>Hanne de Jong</strong>!</p>
+                    </div>
+                    <div class="col-md-7 mb-4 align-self-center">
+                        <div class="customize-input fl-btn">
+                            <select
+                                class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
                                 <option selected="">Aug 19</option>
-                                <option value="1">July 19</option>
+                                <option value="1">Jul 19</option>
                                 <option value="2">Jun 19</option>
                             </select>
-                        </div>                  
-                    </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-md-6">
-                    <div class="card shadow-sm mb-4 border-0">
-                        <div class="card-header bg-white border-0">
-                            <div class="float-left">
-                                <div class="widget-heading">Aantal logins</div>
-                            </div>
-                            <div class="float-right">
-                                <div class="widget-subheading">Afgelopen 7 dagen</div>
-                            </div>
                         </div>
-                            <div class="card-body">
-                                <div class="float-left">
-                                    <span class="widget-numbers">19.234</span>
-                                    <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>0,1%</span></div>
-                                </div>
-                                <div class="float-right"><img src="images/Groei.png"></div>
-                            </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="card shadow-sm mb-4 border-0">
-                        <div class="card-header bg-white border-0">
-                            <div class="float-left">
-                                <div class="widget-heading">Unieke logins</div>
-                            </div>
-                            <div class="float-right">
-                                <div class="widget-subheading">Afgelopen 7 dagen</div>
-                            </div>
-                        </div>
+
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card card-stats border-0 shadow-sm">
+                            <!-- Card body -->
                             <div class="card-body">
-                                <div class="float-left">
-                                    <span class="widget-numbers">1.643</span>
-                                    <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>0,1%</span></div>
-                                </div>
-                                <div class="float-right"><img src="images/Groei.png"></div>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="card shadow-sm mb-4 border-0">
-                        <div class="card-header bg-white border-0">
-                            <div class="float-left">
-                                <div class="widget-heading">Gem. logins</div>
-                            </div>
-                            <div class="float-right">
-                                <div class="widget-subheading">Afgelopen 7 dagen</div>
-                            </div>
-                        </div>
-                            <div class="card-body">
-                                <div class="float-left">
-                                    <span class="widget-numbers">11,7</span>
-                                    <div class="widget-description text-danger"><i class="fa fa-arrow-down"></i><span>0,1%</span></div>
-                                </div>
-                                <div class="float-right"><img src="images/Daling.png"></div>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="card shadow-sm mb-4 border-0">
-                        <div class="card-header bg-white border-0">
-                            <div class="float-left">
-                                <div class="widget-heading">Sessieduur</div>
-                            </div>
-                            <div class="float-right">
-                                <div class="widget-subheading">Afgelopen 7 dagen</div>
-                            </div>
-                        </div>
-                            <div class="card-body">
-                                <div class="float-left">
-                                    <span class="widget-numbers">4m 2s</span>
-                                    <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>0,1%</span></div>
-                                </div>
-                                <div class="float-right"><img src="images/Groei.png"></div>
-                            </div>
-                    </div>
-                </div>
-            </div> <!-- End of row -->
-            <div class="row">
-                                <div class="col-xl-8 col-lg-12 mb-4 d-flex"> 
-                                    <div class="card shadow-sm border-0 flex-fill">
-                                        <div class="card-header bg-white border-0">
-                                                <div class="float-left">
-                                                    <div class="widget-heading">Aantal logins</div>
-                                                </div>
-                                                <div class="btn-group float-right">
-                                                    <button class="btn btn-sm btn-primary btn-simple" onclick="perUur()">Afgelopen 24 uur</button>
-                                                    <button class="btn btn-sm btn-primary btn-simple" onclick="perMaand()">Afgelopen maand</button>
-                                                    <button class="btn btn-sm btn-primary btn-simple active" onclick="perJaar()">Afgelopen jaar</button>
-                                                </div> 
-                                        </div>
-                                        <div class="card-body">    
-                                            <canvas id="myChart"></canvas>
-                                        </div>
-                                    </div>    
-                                </div>
-                            <div class="col-xl-4 col-lg-12 mb-4">
-                                <div class="card shadow-sm border-0">
-                                    <div class="card-header bg-white border-0">
-                                        <div class="float-left">
-                                            <div class="widget-heading">Top items</div>
-                                        </div>
-                                        <div class="float-right">
-                                                <div class="float-right">  
-                                                <div class="dropdown no-arrow">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fa-sm fa-fw text-gray-400"></i>
-                                                    </a>
-                                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 18px, 0px);">
-                                                <div class="dropdown-header">Selecteer activiteit</div>
-                                                <a class="dropdown-item" href="#">Dag</a>
-                                                <a class="dropdown-item" href="#">Week</a>
-                                                <a class="dropdown-item" href="#">Maand</a>
-                                                </div>
-                                                </div>
-                                                </div>  
-                                            </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="mb-0">Aantal logins</p>
+                                        <span class="widget-numbers mr-2">19.234</span>
+                                        <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 0.1%
+                                            <span class="difference-text">Sinds vorige maand</span>
+                                        </span>
                                     </div>
-                                    <div class="card-body">
-                                    <table class="table" id="dataTable" width="100%" cellspacing="0">
-    
-                                <thead> <tr class="custom-table-text">  
-                                      <th class="border-0">Item</th>   
-                                      <th class="float-right border-0">Weergaven</th>   
-                                    </tr></thead>
-                                  <tbody>
-                                    <tr class="custom-table-text">  
-                                      <td>Nieuwsfeed</td>   
-                                      <td class="float-right">13.213</td>   
-                                    </tr>
-                                    <tr class="custom-table-text">  
-                                      <td>Contactenlijst</td>   
-                                      <td class="float-right">12.898</td>   
-                                    </tr>
-                                    <tr class="custom-table-text">  
-                                      <td>Tips & tricks</td>   
-                                      <td class="float-right">11.943</td>   
-                                    </tr>
-                                    <tr class="custom-table-text">  
-                                      <td>Product trainingen</td>   
-                                      <td class="float-right">11.714</td>   
-                                    </tr>
-                                    <tr class="custom-table-text">  
-                                      <td>Wijzigingen</td>   
-                                      <td class="float-right">11.213</td>   
-                                    </tr>
-                                </tbody>
+                                    <div class="col-auto">
+                                        <div class="icon">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card card-stats border-0 shadow-sm">
+                            <!-- Card body -->
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="mb-0">Unieke logins</p>
+                                        <span class="widget-numbers mr-2">2.356</span>
+                                        <span class="text-danger mr-2"><i class="fa fa-arrow-down"></i> 3.48%
+                                            <span class="difference-text">Sinds vorige maand</span>
+                                        </span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="icon">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card card-stats border-0 shadow-sm">
+                            <!-- Card body -->
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="mb-0">Gem.logins</p>
+                                        <span class="widget-numbers mr-2">11,7</span>
+                                        <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%
+                                            <span class="difference-text">Sinds vorige maand</span>
+                                        </span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="icon">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card card-stats border-0 shadow-sm">
+                            <!-- Card body -->
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="mb-0">Sessieduur</p>
+                                        <span class="widget-numbers mr-2">4m 2s</span>
+                                        <span class="text-success mr-2"><i class="fa fa-arrow-up"></i>7.48%
+                                            <span class="difference-text">Sinds vorige maand</span>
+                                        </span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="icon">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of row -->
+
+                <div class="row">
+                    <div class="col-xl-8 col-lg-12 mb-4 d-flex">
+                        <div class="card shadow-sm border-0 flex-fill">
+                            <div class="card-header bg-white border-0">
+                                <div class="float-left">
+                                    <div class="widget-heading">Aantal logins</div>
+                                </div>
+                                <div class="btn-group float-right">
+                                    <button class="btn btn-sm brand-btn btn-simple" onclick="perUur()">Uur</button>
+                                    <button class="btn btn-sm brand-btn btn-simple" onclick="perMaand()">Maand</button>
+                                    <button class="btn btn-sm brand-btn btn-simple active"
+                                        onclick="perJaar()">Jaar</button>
+                                </div>
+                            </div>
+                            <div class="card-body mt-4">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-12">
+                        <div class="card shadow-sm mb-4 border-0">
+                            <div class="card-header bg-white border-0">
+                                <div class="float-left">
+                                    <div class="widget-heading">Top items</div>
+                                </div>
+                                <div class="float-right">
+                                    <div class="float-right">
+                                        <button type="button" class="btn btn-outline-custom">
+                                            <div class="dropdown no-arrow">
+                                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa-sm fa-fw text-gray-400"></i>Weergaven
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                                    aria-labelledby="dropdownMenuLink" x-placement="bottom-end"
+                                                    style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 18px, 0px);">
+                                                    <div class="dropdown-header">Selecteer activiteit</div>
+                                                    <a class="dropdown-item" href="#">Weergaven</a>
+                                                    <a class="dropdown-item" href="#">Likes</a>
+                                                    <a class="dropdown-item" href="#">Reacties</a>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <table class="table" id="dataTable" width="100%" cellspacing="0">
+
+
+                                    <tbody>
+                                        <tr class="custom-table-text">
+                                            <td>Nieuwsfeed</td>
+                                            <td class="float-right">13.213</td>
+                                        </tr>
+                                        <tr class="custom-table-text">
+                                            <td>Contactenlijst</td>
+                                            <td class="float-right">12.898</td>
+                                        </tr>
+                                        <tr class="custom-table-text">
+                                            <td>Tips & tricks</td>
+                                            <td class="float-right">11.943</td>
+                                        </tr>
+                                        <tr class="custom-table-text">
+                                            <td>Product trainingen</td>
+                                            <td class="float-right">11.714</td>
+                                        </tr>
+                                        <tr class="custom-table-text">
+                                            <td>Wijzigingen</td>
+                                            <td class="float-right">11.213</td>
+                                        </tr>
+                                    </tbody>
                                 </table>
-                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End of row -->
+
+                <div class="row">
+                    <div class="col-xl-8 col-lg-12">
+                        <div class="card shadow-sm mb-4 border-0">
+                            <div class="card-header bg-white border-0">
+                                <div class="float-left">
+                                    <div class="widget-heading">Activity score</div>
+                                </div>
+                                <div class="float-right">
+                                    <div class="widget-subheading">Afgelopen 7 dagen</div>
                                 </div>
                             </div>
-                        </div> <!-- End of row -->
-            
-            <div class="row">
-                            <div class="col-xl-8 col-lg-12">
-                                <div class="card shadow-sm mb-4 border-0">
-                                    <div class="card-header bg-white border-0">
-                                        <div class="float-left">
-                                            <div class="widget-heading">Activity score</div>
-                                        </div>
-                                        <div class="float-right">
-                                            <div class="widget-subheading">Afgelopen 7 dagen</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="table-responsive">
-                                            <table class="table" id="dataTable" width="100%" cellspacing="0">
-                                              <thead>
-                                                <tr class="custom-table-text">
-                                                  <th class="d-none d-sm-table-cell">#</th>
-                                                  <th>Avatar</th>
-                                                  <th>Naam</th>
-                                                  <th class="d-none d-sm-table-cell">Functie</th>
-                                                  <th class="d-none d-sm-table-cell">Groep</th>
-                                                  <th>Punten</th>
-                                                  <th class="d-none d-sm-table-cell">Details</th>
-                                                </tr>
-                                              </thead>
-                                                <tbody>
-                                                    <tr class="custom-table-text">
-                                                      <td class="d-none d-sm-table-cell">1</td>
-                                                      <td><img src="images/employee1.png"></td>
-                                                      <td>Sarah Jansen</td>
-                                                      <td class="d-none d-sm-table-cell">HR medewerker</td>
-                                                      <td class="d-none d-sm-table-cell">Groep A</td>
-                                                      <td>90 punten</td>
-                                                      <td class="d-none d-sm-table-cell"><a class="modal-link" data-toggle="modal" data-target="#exampleModalLong" href="#">Bekijk</a></td>
-                                                    </tr>
-                                                      <tr class="custom-table-text">
-                                                      <td class="d-none d-sm-table-cell">2</td>
-                                                      <td><img src="images/employee2.png"></td>
-                                                      <td>Lukas Woudenberg</td>
-                                                      <td class="d-none d-sm-table-cell">Store manager</td>
-                                                      <td class="d-none d-sm-table-cell">Groep B, Groep D</td>
-                                                      <td>82 punten</td>
-                                                      <td class="d-none d-sm-table-cell"><a class="modal-link" data-toggle="modal" data-target="#exampleModalLong" href="#">Bekijk</a></td>
-                                                    </tr>
-                                                    <tr class="custom-table-text">
-                                                      <td class="d-none d-sm-table-cell">3</td>
-                                                      <td><img src="images/employee3.png"></td>
-                                                      <td>Gijs Mulder</td>
-                                                      <td class="d-none d-sm-table-cell">Marketing manager</td>
-                                                      <td class="d-none d-sm-table-cell">Groep C, Groep D</td>
-                                                      <td>75 punten</td>
-                                                      <td class="d-none d-sm-table-cell"><a class="modal-link" data-toggle="modal" data-target="#exampleModalLong" href="#">Bekijk</a></td>
-                                                    </tr>
-                                                    <tr class="custom-table-text">
-                                                      <td class="d-none d-sm-table-cell">4</td>
-                                                      <td><img src="images/employee4.png"></td>
-                                                      <td>Iris Huk</td>
-                                                      <td class="d-none d-sm-table-cell">HR manager</td>
-                                                      <td class="d-none d-sm-table-cell">Groep A, Groep D</td>
-                                                      <td>65 punten</td>
-                                                      <td class="d-none d-sm-table-cell"><a class="modal-link" data-toggle="modal" data-target="#exampleModalLong" href="#">Bekijk</a></td>
-                                                    </tr>
-                                                    <tr class="custom-table-text">
-                                                      <td class="d-none d-sm-table-cell">5</td>
-                                                      <td><img src="images/employee5.png"></td>
-                                                      <td>Joris de Jong</td>
-                                                      <td class="d-none d-sm-table-cell">HR medewerker</td>
-                                                      <td class="d-none d-sm-table-cell">Groep A</td>
-                                                      <td>58 punten</td>
-                                                      <td class="d-none d-sm-table-cell"><a class="modal-link" data-toggle="modal" data-target="#exampleModalLong" href="#">Bekijk</a></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr class="custom-table-text">
+                                                <th class="d-none d-sm-table-cell">#</th>
+                                                <th>Avatar</th>
+                                                <th>Naam</th>
+                                                <th class="d-none d-sm-table-cell">Functie</th>
+                                                <th class="d-none d-sm-table-cell">Groep</th>
+                                                <th>Punten</th>
+                                                <th class="d-none d-sm-table-cell">Details</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="custom-table-text">
+                                                <td class="d-none d-sm-table-cell">1</td>
+                                                <td><img src="assets/employee1.png"></td>
+                                                <td>Sarah Jansen</td>
+                                                <td class="d-none d-sm-table-cell">HR medewerker</td>
+                                                <td class="d-none d-sm-table-cell">Groep A</td>
+                                                <td>90 punten</td>
+                                                <td class="d-none d-sm-table-cell"><a class="modal-link"
+                                                        data-toggle="modal" data-target="#exampleModalLong"
+                                                        href="#">Bekijk</a></td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td class="d-none d-sm-table-cell">2</td>
+                                                <td><img src="assets/employee2.png"></td>
+                                                <td>Lukas Woudenberg</td>
+                                                <td class="d-none d-sm-table-cell">Store manager</td>
+                                                <td class="d-none d-sm-table-cell">Groep B, Groep D</td>
+                                                <td>82 punten</td>
+                                                <td class="d-none d-sm-table-cell"><a class="modal-link"
+                                                        data-toggle="modal" data-target="#exampleModalLong"
+                                                        href="#">Bekijk</a></td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td class="d-none d-sm-table-cell">3</td>
+                                                <td><img src="assets/employee3.png"></td>
+                                                <td>Gijs Mulder</td>
+                                                <td class="d-none d-sm-table-cell">Marketing manager</td>
+                                                <td class="d-none d-sm-table-cell">Groep C, Groep D</td>
+                                                <td>75 punten</td>
+                                                <td class="d-none d-sm-table-cell"><a class="modal-link"
+                                                        data-toggle="modal" data-target="#exampleModalLong"
+                                                        href="#">Bekijk</a></td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td class="d-none d-sm-table-cell">4</td>
+                                                <td><img src="assets/employee4.png"></td>
+                                                <td>Iris Huk</td>
+                                                <td class="d-none d-sm-table-cell">HR manager</td>
+                                                <td class="d-none d-sm-table-cell">Groep A, Groep D</td>
+                                                <td>65 punten</td>
+                                                <td class="d-none d-sm-table-cell"><a class="modal-link"
+                                                        data-toggle="modal" data-target="#exampleModalLong"
+                                                        href="#">Bekijk</a></td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td class="d-none d-sm-table-cell">5</td>
+                                                <td><img src="assets/employee5.png"></td>
+                                                <td>Joris de Jong</td>
+                                                <td class="d-none d-sm-table-cell">HR medewerker</td>
+                                                <td class="d-none d-sm-table-cell">Groep A</td>
+                                                <td>58 punten</td>
+                                                <td class="d-none d-sm-table-cell"><a class="modal-link"
+                                                        data-toggle="modal" data-target="#exampleModalLong"
+                                                        href="#">Bekijk</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
-                
-                
-                                                        <!-- Modal -->
-                                                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                                          <div class="modal-dialog" role="document">
-                                                            <div class="modal-content">
-                                                              <div class="modal-header">
-                                                                <h5 class="modal-title" id="exampleModalLongTitle">Sarah Jansen</h5>
-                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                  <span aria-hidden="true">&times;</span>
-                                                                </button>
-                                                              </div>
-                                                              <div class="modal-body">
-                                                                <canvas id="mybarChart"></canvas>
-                                                              </div>
-                                                              <div class="modal-footer">
-                                                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                
-                            <div class="col-xl-4 col-lg-12 d-flex">
-                                <div class="card shadow-sm mb-4 border-0 flex-fill">
-                                    <div class="card-header bg-white border-0">
-                                        <div class="float-left">
-                                            <div class="widget-heading">Activatiestatistieken</div>
-                                        </div>
-                                            <div class="float-right">
-                                                <div class="float-right">  
-                                                <div class="dropdown no-arrow">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fa-sm fa-fw text-gray-400"></i>
-                                                    </a>
-                                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 18px, 0px);">
+                        </div>
+                    </div>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Sarah Jansen</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <canvas id="modalchart"></canvas>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary btn-purple"
+                                        data-dismiss="modal">Sluiten</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-12 d-flex">
+                        <div class="card shadow-sm mb-4 border-0 flex-fill">
+                            <div class="card-header bg-white border-0">
+                                <div class="float-left">
+                                    <div class="widget-heading">Activatiestatistieken</div>
+                                </div>
+                                <div class="float-right">
+                                    <div class="float-right">
+                                        <div class="dropdown no-arrow">
+                                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa-sm fa-fw text-gray-400"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                                aria-labelledby="dropdownMenuLink" x-placement="bottom-end"
+                                                style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 18px, 0px);">
                                                 <div class="dropdown-header">Selecteer activiteit</div>
                                                 <a class="dropdown-item" href="#">Dag</a>
                                                 <a class="dropdown-item" href="#">Week</a>
                                                 <a class="dropdown-item" href="#">Maand</a>
-                                                </div>
-                                                </div>
-                                                </div>  
                                             </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="widget-subheading">Totaal aantal gebruikers: 3784</div>
-                                        <div class="chart-pie pt-4 pb-2">
-                                            <div class="chartjs-size-monitor">
-                                            <div class="chartjs-size-monitor-expand">
-                                                <div class=""></div>
-                                            </div>
-                                            <div class="chartjs-size-monitor-shrink">
-                                                <div class=""></div>
-                                            </div>
-                                            </div>
-                                        <canvas id="myPieChart" width="328" height="306" class="chartjs-render-monitor" style="display: block; height: 245px; width: 263px;"></canvas>
                                         </div>
-                                        <div class="mt-4 text-center small">
-                                            <span class="mr-2">
-                                              <i class="fas fa-circle purple-circle"></i> Actief - 58%
-                                            </span>
-                                            <span class="mr-2">
-                                              <i class="fas fa-circle darkblue-circle"></i> Niet geactiveerd - 35%
-                                            </span>
-                                            <span class="mr-2">
-                                              <i class="fas fa-circle blue-circle"></i> Gevalideerd - 7%
-                                            </span>
-                                          </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> <!-- End of row -->
-            
-            <!-- Footer -->
-              <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                  <div class="copyright text-center my-auto">
-                    <span class="username">&copy; Made by <a href="https://www.daanloman.nl" target="_blank" class="purple-circle">Daan Loman</a> 2019</span>
-                  </div>
+                            <div class="card-body">
+                                <div class="widget-subheading">Totaal aantal gebruikers: 3784</div>
+                                <div class="chart-pie pt-4 pb-2">
+                                    <div class="chartjs-size-monitor">
+                                        <div class="chartjs-size-monitor-expand">
+                                            <div class=""></div>
+                                        </div>
+                                        <div class="chartjs-size-monitor-shrink">
+                                            <div class=""></div>
+                                        </div>
+                                    </div>
+                                    <canvas id="myPieChart" width="328" height="306" class="chartjs-render-monitor"
+                                        style="display: block; height: 245px; width: 263px;"></canvas>
+                                </div>
+                                <div class="mt-4 text-center small">
+                                    <span class="mr-2">
+                                        <i class="fas fa-circle purple-circle"></i> Actief - 58%
+                                    </span>
+                                    <span class="mr-2">
+                                        <i class="fas fa-circle darkblue-circle"></i> Niet geactiveerd - 35%
+                                    </span>
+                                    <span class="mr-2">
+                                        <i class="fas fa-circle blue-circle"></i> Gevalideerd - 7%
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </footer>
-              <!-- End of Footer -->
-            </div>  <!-- End of container -->  
-            
-        </div> <!-- End of page content -->
-    </div> <!-- End of Wrapper -->
-        
-        
-        <!-- jQuery v3.4.1  -->
-        <script src="js/jquery.min.js"></script>
-        
-        <!-- Bootstrap JS v4.3.1 -->
-        <script src="js/bootstrap.bundle.min.js"></script>
-        
-        <!-- Page level plugins -->
-        <script src="js/Chart.min.js"></script>
+                <!-- End of row -->
 
-        <!-- Page level custom scripts -->
-        <script src="js/chart-pie-demo.js"></script>
-        <script src="js/activityscore.js"></script>
-        <script src="js/logins.js"></script>
-        
-     
 
-        
-        <!-- Sidebar collapse function -->
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar').toggleClass('active');
-                });
-            });
-        </script>
-        
-        <!-- Button active class -->
-        <script>
-            $('.btn-group button').on('click', function(){
-                $(this).siblings().removeClass('active')
-                $(this).addClass('active');
-            })
-        </script>
-    </body>    
+            </div>
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span class="username">&copy; Made by <a href="https://www.daanloman.nl" target="_blank"
+                                class="brand-color">Daan Loman</a> 2019</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+
+
+    <!-- Javascript files -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="js/Chart.min.js"></script>
+    <script src="js/chart-pie-demo.js"></script>
+    <script src="js/activityscore.js"></script>
+    <script src="js/logins.js"></script>
+
+    <!-- Custom Javascript files -->
+    <script src="js/custom.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+
+    <!-- Change button -->
+    <script>
+        $("button").click(function () {
+            $(this).find("i").toggleClass("fa-times");
+        });
+    </script>
+
+    <!-- Button active class -->
+    <script>
+        $('.btn-group button').on('click', function () {
+            $(this).siblings().removeClass('active')
+            $(this).addClass('active');
+        })
+    </script>
+
+</body>
+
 </html>

@@ -1,5 +1,5 @@
         // Teken de grafiek
-        var ctx = document.getElementById('mybarChart').getContext('2d');
+        var ctx = document.getElementById('modalchart').getContext('2d');
         var chart = new Chart(ctx, {
         // The type of chart we want to create
         type: 'horizontalBar',
@@ -9,7 +9,7 @@
             labels: ["Likes", "Reacties", "Shares"],
                     datasets: [{
                         label: 'Aantal logins',
-                        data: [40,30,20],
+                        data: [43,15,12],
                         backgroundColor: "rgba(168, 54, 155, 0.05)",
                         borderColor: 'rgba(168, 54, 155,1)',
                         borderWidth: 1

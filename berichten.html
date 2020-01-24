@@ -1,508 +1,526 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Daan Loman">
+    <title>Incrowd · User Dashboard</title>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
 
-  <title>Incrowd - Dashboard</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
-        
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
 </head>
-    
-    <body id="page-top">
 
-  <!-- Page Wrapper -->
-  <div id="wrapper">
+<body>
 
-    <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center mb-3" href="index.html">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <img src="images/incrowd.png">
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
         </div>
-        <div class="sidebar-brand-text mx-3">Incrowd</div>
-      </a>
+    </section>
 
+    <div class="d-flex" id="wrapper">
 
-        
+        <!-- Sidebar -->
+        <div class="bg-white border-right mt-5" id="sidebar-wrapper">
 
+            <div class="list-group list-group-flush mt-5">
 
-      <!-- Nav Item - Updates -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-home"></i>
-          <span>Home</span></a>
-      </li>
+                <li class="nav-small-cap">Dashboard</li>
 
-      <!-- Divider -->
-      <hr class="sidebar-divider">
+                <a href="index.html" class="list-group-item list-group-item-action border-0"><img class="mr-3"
+                        src="assets/icons/activity.svg">Overzicht</a>
+                <a href="berichten.html" class="list-group-item list-group-item-action border-0 active"><img
+                        class="mr-3" src="assets/icons/message-square-purple.svg">Berichten</a>
+                <a href="gebruikers.html" class="list-group-item list-group-item-action border-0"><img class="mr-3"
+                        src="assets/icons/users.svg">Gebruikers</a>
 
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Dashboard
-      </div>
-        
-      <!-- Nav Item - Overzicht -->
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Overzicht</span></a>
-      </li>
-        
-      <!-- Nav Item - Berichten -->
-      <li class="nav-item  active">
-        <a class="nav-link" href="berichten.html">
-          <i class="fas fa-envelope"></i>
-          <span>Berichten</span></a>
-      </li>
-        
-      <!-- Nav Item - Gebruikers -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-users"></i>
-          <span>Gebruikers</span></a>
-      </li>
+                <li class="nav-small-cap">Overige</li>
 
+                <a href="#" class="list-group-item list-group-item-action border-0"><img class="mr-3"
+                        src="assets/icons/info.svg">FAQ</a>
+                <a href="#" class="list-group-item list-group-item-action border-0"><img class="mr-3"
+                        src="assets/icons/coffee.svg">Contact</a>
 
-
-
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Management
-      </div>
-
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Pages</h6>
-            <a class="collapse-item" href="login.html">Categorieën</a>
-            <a class="collapse-item" href="register.html">Menu's</a>
-            <a class="collapse-item" href="forgot-password.html">Emails</a>
-          </div>
-        </div>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
-
-      <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-      </div>
-
-    </ul>
-    <!-- End of Sidebar -->
-
-    <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
-
-      <!-- Main Content -->
-      <div id="content">
-
-        <!-- Topbar -->
-        <nav class="navbar navbar-expand  bg-white topbar mb-4 static-top shadow">
-
-          <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn d-md-none rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
-
-          <!-- Topbar Navbar -->
-          <ul class="navbar-nav ml-auto">
-
-            <div class="topbar-divider d-none d-sm-block"></div>
-
-            <!-- Nav Item - User Information -->
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline">Hanne de Jong</span>
-                <img class="img-profile rounded-circle" src="images/Avatar.png">
-              </a>
-              <!-- Dropdown - User Information -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2"></i>
-                  Profile
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2"></i>
-                  Settings
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-list fa-sm fa-fw mr-2"></i>
-                  Activity Log
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
-                </a>
-              </div>
-            </li>
-
-          </ul>
-
-        </nav>
-        <!-- End of Topbar -->
-        </div>
-        
-                    <div class="container-fluid">
-                    
-            <!-- Page Heading -->
-            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                <h1 class="page-title">Berichten</h1>
             </div>
-                
+        </div>
+        <!-- sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+
+                <div class="sidebar-heading"><img src="assets/logo-incrowd-bold.png"> </div>
+
+                <button class="btn" id="menu-toggle"><i class="fas fa-bars"></i></button>
+
+                <!-- Show logo in middle on mobile -->
+
+
+                <div class="navbar-logo"><img src="assets/logo-incrowd-bold.png"></div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-ellipsis-h"></i>
+                </button>
+
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img class="mr-2" width="30px" height="30px" src="assets/Avatar.png">
+                                Hanne de Jong <img src="assets/icons/chevron-down.svg">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"><img class="mr-2"
+                                        src="assets/icons/user.svg">Profiel</a>
+                                <a class="dropdown-item" href="#"><img class="mr-2"
+                                        src="assets/icons/settings.svg">Instellingen</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><img class="mr-2"
+                                        src="assets/icons/log-out.svg">Loguit</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Place dynamic content here -->
+            <div class="container-fluid content">
+                <!-- Page Heading -->
+                <div class="row mt-3">
+                    <div class="col-md-5 mb-2">
+                        <h1 class="page-title">Berichten</h1>
+                        <p class="text-gray">Meet pupulaire discussies, bestanden en (nieuws)berichten.</p>
+                    </div>
+                    <div class="col-md-7 mb-4 align-self-center">
+                        <div class="customize-input fl-btn">
+                            <select
+                                class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+                                <option selected="">Aug 19</option>
+                                <option value="1">Jul 19</option>
+                                <option value="2">Jun 19</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
-                    <div class="col-md-12 col-xs-12 col-lg-12 col-xl-4">
-                        <div class="overviewcard mb-3 widget-content shadow border-0">
-                            <div class="widget-content-wrapper text-black align-items-center">
-                                <div class="widget-content-left">
-                                    <img src="images/envelope.png" width="27px" height="21px">
-                                </div>
-                                <div class="widget-content-center">
-                                    <div class="widget-heading">Aantal berichten</div>
-                                    <div class="widget-subheading">Afgelopen 7 dagen</div>
-                                </div>
-                                <div class="widget-content-right">
-                                    <div class="widget-numbers"><span>46</span>
-                                        <div class="widget-description text-danger"><i class="fa fa-arrow-down"></i><span>1,1%</span></div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card card-stats border-0 shadow-sm">
+                            <!-- Card body -->
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="mb-0">Berichten</p>
+                                        <span class="widget-numbers mr-2">46</span>
+                                        <span class="text-danger mr-2"><i class="fa fa-arrow-up"></i> 0.1%
+                                            <span class="difference-text">Sinds vorige maand</span>
+                                        </span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="icon">
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-md-12 col-xs-12 col-lg-12 col-xl-4">
-                        <div class="overviewcard mb-3 widget-content shadow border-0">
-                            <div class="widget-content-wrapper text-black align-items-center">
-                                <div class="widget-content-left">
-                                    <img src="images/thumb-up-gesture.png" width="28px" height="27px">
-                                </div>
-                                <div class="widget-content-center">
-                                    <div class="widget-heading">Aantal likes</div>
-                                    <div class="widget-subheading">Afgelopen 7 dagen</div>
-                                </div>
-                                <div class="widget-content-right">
-                                    <div class="widget-numbers"><span>4.423</span>
-                                        <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>7,1%</span></div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card card-stats border-0 shadow-sm">
+                            <!-- Card body -->
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="mb-0">Likes</p>
+                                        <span class="widget-numbers mr-2">4.423</span>
+                                        <span class="text-danger mr-2"><i class="fa fa-arrow-down"></i> 7.1%
+                                            <span class="difference-text">Sinds vorige maand</span>
+                                        </span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="icon">
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-md-12 col-xs-12 col-lg-12 col-xl-4">
-                        <div class="overviewcard mb-3 widget-content shadow border-0">
-                            <div class="widget-content-wrapper text-black align-items-center">
-                                <div class="widget-content-left">
-                                    <img src="images/comment-dots.png" width="30px" height="26px">
-                                </div>
-                                <div class="widget-content-center">
-                                    <div class="widget-heading">Aantal reacties</div>
-                                    <div class="widget-subheading">Afgelopen 7 dagen</div>
-                                </div>
-                                <div class="widget-content-right">
-                                    <div class="widget-numbers"><span>1.322</span>
-                                        <div class="widget-description text-success"><i class="fa fa-arrow-up"></i><span>5,1%</span></div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card card-stats border-0 shadow-sm">
+                            <!-- Card body -->
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="mb-0">Reacties</p>
+                                        <span class="widget-numbers mr-2">1.322</span>
+                                        <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 5.1%
+                                            <span class="difference-text">Sinds vorige maand</span>
+                                        </span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="icon">
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> <!-- End of row -->
-                        
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card card-stats border-0 shadow-sm">
+                            <!-- Card body -->
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="mb-0">Shares</p>
+                                        <span class="widget-numbers mr-2">102</span>
+                                        <span class="text-success mr-2"><i class="fa fa-arrow-up"></i>2.1%
+                                            <span class="difference-text">Sinds vorige maand</span>
+                                        </span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="icon">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of row -->
+
                 <div class="row">
-                    <div class="col-md-12 col-xs-12 col-lg-12 col-xl-8">
+                    <div class="col-md-12 col-xs-12 col-lg-12 col-xl-8 d-flex">
                         <!-- DataTales Example -->
-                          <div class="card shadow mb-4 border-0">
+                        <div class="card shadow-sm mb-4 border-0 flex-fill">
                             <div class="card-header bg-white py-3 border-0">
-                              <h6 class="m-0 font-weight-bold">Alle berichten</h6>
+                                <h6 class="m-0 font-weight-bold">Alle berichten</h6>
                             </div>
                             <div class="card-body">
-                              <div class="table-responsive">
-                                <table class="table" id="dataTable" width="100%" cellspacing="0">
-                                  <thead>
-                                    <tr class="custom-table-text bg-purple">
-                                      <th class="d-none d-sm-table-cell">Avatar</th>
-                                      <th>Titel</th>
-                                      <th class="d-none d-sm-table-cell">Groepen</th>
-                                      <th>Bereik</th>
-                                      <th>Weergaven</th>
-                                      <th>Likes</th>
-                                      <th>Reacties</th>
-                                      <th class="d-none d-sm-table-cell">Shares</th>
-                                      <th class="d-none d-sm-table-cell">Analytics</th>
-                                    </tr>
-                                  </thead>
+                                <div class="table-responsive">
+                                    <table class="table" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr class="custom-table-text bg-purple">
+                                                <th class="d-none d-sm-table-cell">Avatar</th>
+                                                <th>Titel</th>
+                                                <th class="d-none d-sm-table-cell">Groepen</th>
+                                                <th>Bereik</th>
+                                                <th>Weergaven</th>
+                                                <th>Likes</th>
+                                                <th>Reacties</th>
+                                                <th class="d-none d-sm-table-cell">Shares</th>
+                                                <th class="d-none d-sm-table-cell">Analytics</th>
+                                            </tr>
+                                        </thead>
 
-                                  <tbody>
-                                    <tr class="custom-table-text">
-                                      <td class="d-none d-sm-table-cell"><img src="images/Avatar.png"></td>
-                                      <td>Voorlopige eindstand Samsung incentives</td>
-                                      <td class="d-none d-sm-table-cell">Groep A</td>
-                                      <td>72%</td>
-                                      <td>1587</td>
-                                      <td>987</td>
-                                      <td>67</td>
-                                      <td class="d-none d-sm-table-cell">7</td>
-                                      <td class="d-none d-sm-table-cell">Bekijk</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td class="d-none d-sm-table-cell"><img src="images/Avatar2.png"></td>
-                                      <td>Overheid kan 5G nog versnellen</td>
-                                      <td class="d-none d-sm-table-cell">Groep A</td>
-                                      <td>87%</td>
-                                      <td>987</td>
-                                      <td>312</td>
-                                      <td>32</td>
-                                      <td class="d-none d-sm-table-cell">5</td>
-                                      <td class="d-none d-sm-table-cell">Bekijk</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td class="d-none d-sm-table-cell"><img src="images/Avatar.png"></td>
-                                      <td>Aankondiging | Tariefswijziging</td>
-                                      <td class="d-none d-sm-table-cell">Groep B</td>
-                                      <td>77%</td>
-                                      <td>1198</td>
-                                      <td>546</td>
-                                      <td>156</td>
-                                      <td class="d-none d-sm-table-cell">33</td>
-                                      <td class="d-none d-sm-table-cell">Bekijk</td>
-                                    </tr> 
-                                    <tr class="custom-table-text">
-                                      <td class="d-none d-sm-table-cell"><img src="images/Avatar.png"></td>
-                                      <td>Start Retail Awards</td>
-                                      <td class="d-none d-sm-table-cell">Alle</td>
-                                      <td>93%</td>
-                                      <td>2645</td>
-                                      <td>1102</td>
-                                      <td>132</td>
-                                      <td class="d-none d-sm-table-cell">68</td>
-                                      <td class="d-none d-sm-table-cell">Bekijk</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td class="d-none d-sm-table-cell"><img src="images/Avatar3.png"></td>
-                                      <td>Uitblinken in ondernemen</td>
-                                      <td class="d-none d-sm-table-cell">Groep B</td>
-                                      <td>77%</td>
-                                      <td>576</td>
-                                      <td>64</td>
-                                      <td>22</td>
-                                      <td class="d-none d-sm-table-cell">9</td>
-                                      <td class="d-none d-sm-table-cell">Bekijk</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td class="d-none d-sm-table-cell"><img src="images/Avatar.png"></td>
-                                      <td>Voorlopige eindstand Samsung incentives</td>
-                                      <td class="d-none d-sm-table-cell">Groep A</td>
-                                      <td>72%</td>
-                                      <td>1587</td>
-                                      <td>987</td>
-                                      <td>67</td>
-                                      <td class="d-none d-sm-table-cell">7</td>
-                                      <td class="d-none d-sm-table-cell">Bekijk</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td class="d-none d-sm-table-cell"><img src="images/Avatar2.png"></td>
-                                      <td>Overheid kan 5G nog versnellen</td>
-                                      <td class="d-none d-sm-table-cell">Groep A</td>
-                                      <td>87%</td>
-                                      <td>987</td>
-                                      <td>312</td>
-                                      <td>32</td>
-                                      <td class="d-none d-sm-table-cell">5</td>
-                                      <td class="d-none d-sm-table-cell">Bekijk</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td class="d-none d-sm-table-cell"><img src="images/Avatar.png"></td>
-                                      <td>Aankondiging | Tariefswijziging</td>
-                                      <td class="d-none d-sm-table-cell">Groep B</td>
-                                      <td>77%</td>
-                                      <td>1198</td>
-                                      <td>546</td>
-                                      <td>156</td>
-                                      <td class="d-none d-sm-table-cell">33</td>
-                                      <td class="d-none d-sm-table-cell">Bekijk</td>
-                                    </tr> 
-                                    <tr class="custom-table-text">
-                                      <td class="d-none d-sm-table-cell"><img src="images/Avatar.png"></td>
-                                      <td>Start Retail Awards</td>
-                                      <td class="d-none d-sm-table-cell">Alle</td>
-                                      <td>93%</td>
-                                      <td>2645</td>
-                                      <td>1102</td>
-                                      <td>132</td>
-                                      <td class="d-none d-sm-table-cell">68</td>
-                                      <td class="d-none d-sm-table-cell">Bekijk</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td class="d-none d-sm-table-cell"><img src="images/Avatar3.png"></td>
-                                      <td>Uitblinken in ondernemen</td>
-                                      <td class="d-none d-sm-table-cell">Groep B</td>
-                                      <td>77%</td>
-                                      <td>576</td>
-                                      <td>64</td>
-                                      <td>22</td>
-                                      <td class="d-none d-sm-table-cell">9</td>
-                                      <td class="d-none d-sm-table-cell">Bekijk</td>
-                                    </tr>
-                                    </tbody>
-                                  </table>
+                                        <tbody>
+                                            <tr class="custom-table-text">
+                                                <td class="d-none d-sm-table-cell"><img src="assets/Avatar.png"></td>
+                                                <td>Voorlopige eindstand Samsung incentives</td>
+                                                <td class="d-none d-sm-table-cell">Groep A</td>
+                                                <td>72%</td>
+                                                <td>1587</td>
+                                                <td>987</td>
+                                                <td>67</td>
+                                                <td class="d-none d-sm-table-cell">7</td>
+                                                <td class="d-none d-sm-table-cell">Bekijk</td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td class="d-none d-sm-table-cell"><img src="assets/Avatar2.png"></td>
+                                                <td>Overheid kan 5G nog versnellen</td>
+                                                <td class="d-none d-sm-table-cell">Groep A</td>
+                                                <td>87%</td>
+                                                <td>987</td>
+                                                <td>312</td>
+                                                <td>32</td>
+                                                <td class="d-none d-sm-table-cell">5</td>
+                                                <td class="d-none d-sm-table-cell">Bekijk</td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td class="d-none d-sm-table-cell"><img src="assets/Avatar.png"></td>
+                                                <td>Aankondiging | Tariefswijziging</td>
+                                                <td class="d-none d-sm-table-cell">Groep B</td>
+                                                <td>77%</td>
+                                                <td>1198</td>
+                                                <td>546</td>
+                                                <td>156</td>
+                                                <td class="d-none d-sm-table-cell">33</td>
+                                                <td class="d-none d-sm-table-cell">Bekijk</td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td class="d-none d-sm-table-cell"><img src="assets/Avatar.png"></td>
+                                                <td>Start Retail Awards</td>
+                                                <td class="d-none d-sm-table-cell">Alle</td>
+                                                <td>93%</td>
+                                                <td>2645</td>
+                                                <td>1102</td>
+                                                <td>132</td>
+                                                <td class="d-none d-sm-table-cell">68</td>
+                                                <td class="d-none d-sm-table-cell">Bekijk</td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td class="d-none d-sm-table-cell"><img src="assets/Avatar3.png"></td>
+                                                <td>Uitblinken in ondernemen</td>
+                                                <td class="d-none d-sm-table-cell">Groep B</td>
+                                                <td>77%</td>
+                                                <td>576</td>
+                                                <td>64</td>
+                                                <td>22</td>
+                                                <td class="d-none d-sm-table-cell">9</td>
+                                                <td class="d-none d-sm-table-cell">Bekijk</td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td class="d-none d-sm-table-cell"><img src="assets/Avatar.png"></td>
+                                                <td>Voorlopige eindstand Samsung incentives</td>
+                                                <td class="d-none d-sm-table-cell">Groep A</td>
+                                                <td>72%</td>
+                                                <td>1587</td>
+                                                <td>987</td>
+                                                <td>67</td>
+                                                <td class="d-none d-sm-table-cell">7</td>
+                                                <td class="d-none d-sm-table-cell">Bekijk</td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td class="d-none d-sm-table-cell"><img src="assets/Avatar2.png"></td>
+                                                <td>Overheid kan 5G nog versnellen</td>
+                                                <td class="d-none d-sm-table-cell">Groep A</td>
+                                                <td>87%</td>
+                                                <td>987</td>
+                                                <td>312</td>
+                                                <td>32</td>
+                                                <td class="d-none d-sm-table-cell">5</td>
+                                                <td class="d-none d-sm-table-cell">Bekijk</td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td class="d-none d-sm-table-cell"><img src="assets/Avatar.png"></td>
+                                                <td>Aankondiging | Tariefswijziging</td>
+                                                <td class="d-none d-sm-table-cell">Groep B</td>
+                                                <td>77%</td>
+                                                <td>1198</td>
+                                                <td>546</td>
+                                                <td>156</td>
+                                                <td class="d-none d-sm-table-cell">33</td>
+                                                <td class="d-none d-sm-table-cell">Bekijk</td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td class="d-none d-sm-table-cell"><img src="assets/Avatar.png"></td>
+                                                <td>Start Retail Awards</td>
+                                                <td class="d-none d-sm-table-cell">Alle</td>
+                                                <td>93%</td>
+                                                <td>2645</td>
+                                                <td>1102</td>
+                                                <td>132</td>
+                                                <td class="d-none d-sm-table-cell">68</td>
+                                                <td class="d-none d-sm-table-cell">Bekijk</td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td class="d-none d-sm-table-cell"><img src="assets/Avatar3.png"></td>
+                                                <td>Uitblinken in ondernemen</td>
+                                                <td class="d-none d-sm-table-cell">Groep B</td>
+                                                <td>77%</td>
+                                                <td>576</td>
+                                                <td>64</td>
+                                                <td>22</td>
+                                                <td class="d-none d-sm-table-cell">9</td>
+                                                <td class="d-none d-sm-table-cell">Bekijk</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                              </div>
                             </div>
-                    </div>  
-                    
+                        </div>
+                    </div>
                     <div class="col-md-12 col-xs-12 col-lg-12 col-xl-4">
-                        
+
                         <!-- Area chart -->
                         <div class="row">
                             <div class="col-md-12 col-xs-12 col-lg-12 col-xl-12">
-                                <div class="card shadow mb-4 border-0">
+                                <div class="card shadow-sm mb-4 border-0">
                                     <div class="card-header bg-white py-3 border-0">
                                         <div class="float-left">
-                                        <h6 class="m-0 font-weight-bold">Recente activiteiten</h6>
+                                            <h6 class="m-0 font-weight-bold">Recente activiteiten</h6>
                                         </div>
-                                            <div class="float-right">  
-                                            <div class="dropdown no-arrow">
-                                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <i class="fa-sm fa-fw text-gray-400"></i>
-                                                </a>
-                                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 18px, 0px);">
-                                            <div class="dropdown-header">Selecteer activiteit</div>
-                                            <a class="dropdown-item" href="#">Likes</a>
-                                            <a class="dropdown-item" href="#">Reacties</a>
-                                            <a class="dropdown-item" href="#">Shares</a>
+                                        <div class="float-right">
+                                            <div class="float-right">
+                                                <div class="dropdown no-arrow">
+                                                    <a class="dropdown-toggle" href="#" role="button"
+                                                        id="dropdownMenuLink" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fa-sm fa-fw text-gray-400"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                                        aria-labelledby="dropdownMenuLink" x-placement="bottom-end"
+                                                        style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 18px, 0px);">
+                                                        <div class="dropdown-header">Selecteer activiteit</div>
+                                                        <a class="dropdown-item" href="#">Dag</a>
+                                                        <a class="dropdown-item" href="#">Week</a>
+                                                        <a class="dropdown-item" href="#">Maand</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        </div>  
                                     </div>
-                                <div class="card-body">
-                                    <h3>1.322 Reacties</h3>
-                                    <p>Geplaatst door 245 verschillende gebruikers</p>
-                            
-                                    <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
+                                    <div class="card-body">
+                                        <h3>1.322 Reacties</h3>
+                                        <p>Geplaatst door 245 verschillende gebruikers</p>
+
+                                        <div class="chart-area">
+                                            <canvas id="myAreaChart"></canvas>
+                                        </div>
                                     </div>
-                                </div>
                                 </div>
                             </div>
                         </div> <!-- End of row -->
-                        
-                     <!-- Populaire berichten area -->
-                      <div class="card shadow mb-4 border-0">
-                        <div class="card-header bg-white py-3 border-0">
-                            <div class="float-left">
-                          <h6 class="m-0 font-weight-bold">Populaire berichten</h6>
+
+                        <!-- Populaire berichten area -->
+                        <div class="card shadow-sm mb-4 border-0">
+                            <div class="card-header bg-white py-3 border-0">
+                                <div class="float-left">
+                                    <h6 class="m-0 font-weight-bold">Populaire berichten</h6>
                                 </div>
-                                                                        <div class="float-right">  
-                                            <div class="dropdown no-arrow">
-                                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <i class="fa-sm fa-fw text-gray-400"></i>
-                                                </a>
-                                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 18px, 0px);">
-                                            <div class="dropdown-header">Selecteer activiteit</div>
-                                            <a class="dropdown-item" href="#">Weergaven</a>
-                                            <a class="dropdown-item" href="#">Likes</a>
-                                            <a class="dropdown-item" href="#">Reacties</a>
+                                <div class="float-right">
+                                    <div class="float-right">
+                                        <div class="dropdown no-arrow">
+                                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa-sm fa-fw text-gray-400"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                                aria-labelledby="dropdownMenuLink" x-placement="bottom-end"
+                                                style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 18px, 0px);">
+                                                <div class="dropdown-header">Selecteer activiteit</div>
+                                                <a class="dropdown-item" href="#">Dag</a>
+                                                <a class="dropdown-item" href="#">Week</a>
+                                                <a class="dropdown-item" href="#">Maand</a>
                                             </div>
                                         </div>
-                                        </div>  
-                            
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table" id="dataTable" width="100%" cellspacing="0">
-    
+                                    </div>
+                                </div>
 
-                                  <tbody>
-                                    <tr class="custom-table-text">
-                                      <td><img src="images/Avatar.png"></td>
-                                      <td>Start Retail Awards</td>
-                                      <td>2.645</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td><img src="images/Avatar3.png"></td>
-                                      <td>Vier stellingen over stralingen</td>
-                                      <td>2.612</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td><img src="images/Avatar.png"></td>
-                                      <td>Voorlopige eindstand Samsung incentives</td>
-                                      <td>1.587</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td><img src="images/Avatar3.png"></td>
-                                      <td>Wijziging CAO</td>
-                                      <td>1.498</td>
-                                    </tr>
-                                    <tr class="custom-table-text">
-                                      <td><img src="images/Avatar.png"></td>
-                                      <td>Aankondiging | Tariefswijziging</td>
-                                      <td>1.198</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table" id="dataTable" width="100%" cellspacing="0">
+
+
+                                        <tbody>
+                                            <tr class="custom-table-text">
+                                                <td><img src="assets/Avatar.png"></td>
+                                                <td>Start Retail Awards</td>
+                                                <td>2.645</td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td><img src="assets/Avatar3.png"></td>
+                                                <td>Vier stellingen over stralingen</td>
+                                                <td>2.612</td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td><img src="assets/Avatar.png"></td>
+                                                <td>Voorlopige eindstand Samsung incentives</td>
+                                                <td>1.587</td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td><img src="assets/Avatar3.png"></td>
+                                                <td>Wijziging CAO</td>
+                                                <td>1.498</td>
+                                            </tr>
+                                            <tr class="custom-table-text">
+                                                <td><img src="assets/Avatar.png"></td>
+                                                <td>Aankondiging | Tariefswijziging</td>
+                                                <td>1.198</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
-                      </div>
                     </div>
-            </div><!-- End of row -->
-                        
-            </div> <!-- End of container fluid -->
-      </div> <!-- End of Content Wrapper -->
-    </div> <!-- End of Page wrapper -->
-        
+                </div><!-- End of row -->
 
-    
 
-        
-         <!-- Bootstrap core JavaScript-->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+            </div>
 
-  <!-- Core plugin JavaScript-->
-  <script src="js/jquery.easing.min.js"></script>
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span class="username">&copy; Made by <a href="https://www.daanloman.nl" target="_blank"
+                                class="brand-color">Daan Loman</a> 2019</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
 
-  <!-- Custom scripts for all pages-->
-  <script src="js/custom.js"></script>
-    
+        </div>
+        <!-- /#page-content-wrapper -->
 
-  <!-- Page level plugins -->
-  <script src="js/jquery.dataTables.min.js"></script>
-  <script src="js/dataTables.bootstrap4.min.js"></script>
-  <script src="js/Chart.min.js"></script>
+    </div>
+    <!-- /#wrapper -->
 
-  <!-- Page level custom scripts -->
-  <script src="js/datatables-demo.js"></script>
-  <script src="js/chart-area-demo.js"></script>
-        
-    </body>
-    
+
+
+
+
+    <!-- Javascript files -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/datatables-demo.js"></script>
+    <script src="js/chart-area-demo.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+
+    <!-- Change button -->
+    <script>
+        $("button").click(function () {
+            $(this).find("i").toggleClass("fa-times");
+        });
+    </script>
+
+    <!-- Button active class -->
+    <script>
+        $('.btn-group button').on('click', function () {
+            $(this).siblings().removeClass('active')
+            $(this).addClass('active');
+        })
+    </script>
+
+</body>
+
 </html>
